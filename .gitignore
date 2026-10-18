@@ -17,20 +17,6 @@ xboxrecomp/tools/*/output/
 game/
 darkwatch_game/game/
 
-# A packaged or played copy
-Darkwatch/
-dist/
-darkwatch_game/Darkwatch/
-saves/
-saves-win/
-screenshots/
-assets/launcher_*.png
-darkwatch.ini
-env.txt
-*.log
-darkwatch-log*.txt
-xbox_kernel.log
-logs/
 
 # Python / editors
 __pycache__/

@@ -1,0 +1,2534 @@
+=== Darkwatch - static recompilation (Windows) ===
+[PC] Darkwatch PC, built Oct 18 2026 10:18:33; mouse sensitivity 100%
+[PC] display 1440 px high at 200 Hz; settings: fullscreen, 4:3, interpolation on, V-Sync on, frame cap 0, internal resolution 3
+[BOOT] 16 CPU(s); game data C:\Users\JakeSmith0212\Downloads\DarkwatchPCv.1.0\darkwatch_game\game; saves C:\Users\JakeSmith0212\Downloads\DarkwatchPCv.1.0\Darkwatch\saves
+xbox_MemoryLayoutInit: guest window reservation: none (fixed base list, nothing held), base 0000000000010000
+xbox_MemoryLayoutInit: mapped 131072 KB at 0x0000000000010000 (offset +65536 from Xbox base)
+  XBE header: 3424 bytes at 0000000000020000 (Xbox VA 0x00010000)
+  XBE sections: 24 (headers at file offset 0x00000370)
+  [ 0] .text        VA=0x00011000 vsize=3347388  raw=0x00001000 rsize=3347388 
+  [ 1] D3D          VA=0x003423C0 vsize=85076    raw=0x00333000 rsize=69996    (BSS)
+  [ 2] XNET         VA=0x00357020 vsize=77376    raw=0x00345000 rsize=77376   
+  [ 3] XONLINE      VA=0x00369E60 vsize=134368   raw=0x00358000 rsize=134368  
+  [ 4] D3DX         VA=0x0038AB40 vsize=118824   raw=0x00379000 rsize=118816   (BSS)
+  [ 5] DSOUND       VA=0x003A7B80 vsize=125196   raw=0x00397000 rsize=124572   (BSS)
+  [ 6] PSFD_I       VA=0x003C64A0 vsize=1060     raw=0x003B6000 rsize=1060    
+  [ 7] PSFD_B       VA=0x003C68E0 vsize=2244     raw=0x003B7000 rsize=2244    
+  [ 8] PSFD_P       VA=0x003C71C0 vsize=1600     raw=0x003B8000 rsize=1600    
+  [ 9] PSFD00       VA=0x003C7800 vsize=5992     raw=0x003B9000 rsize=5992    
+  [10] WMADEC       VA=0x003C8F80 vsize=102524   raw=0x003BB000 rsize=102524  
+  [11] XACTENG      VA=0x003E2000 vsize=43624    raw=0x003D5000 rsize=43540    (BSS)
+  [12] XGRPH        VA=0x003ECA80 vsize=133124   raw=0x003E0000 rsize=133112   (BSS)
+  [13] XPP          VA=0x0040D2A0 vsize=35940    raw=0x00401000 rsize=35940   
+  [14] .rdata       VA=0x00415F20 vsize=443620   raw=0x0040A000 rsize=443604   (BSS)
+  [15] .data        VA=0x00482420 vsize=1532604  raw=0x00477000 rsize=171172   (BSS)
+  [16] XON_RD       VA=0x005F86E0 vsize=5616     raw=0x004A1000 rsize=5616    
+  [17] DOLBY        VA=0x005F9CE0 vsize=29056    raw=0x004A3000 rsize=29036    (BSS)
+  [18] .data1       VA=0x00600E60 vsize=224      raw=0x004AB000 rsize=176      (BSS)
+  [19] $$XTIMAGE    VA=0x00600F40 vsize=67584    raw=0x004AE000 rsize=67584   
+  [20] $$XSIMAGE    VA=0x00611740 vsize=18432    raw=0x004BF000 rsize=18432   
+  [21] dspimage     VA=0x00615F40 vsize=19824    raw=0x004C4000 rsize=19824   
+  [22] dvddirty     VA=0x0061ACC0 vsize=6982     raw=0x004AC000 rsize=6982    
+  [23] .XTLID       VA=0x0061C820 vsize=2824     raw=0x004C9000 rsize=2824    
+  Loaded 24/24 sections (4963778 bytes total)
+  Toolkit region: 0x00700000 (image ends 0x0061D328)
+  Kernel thunks: 151 entries at Xbox VA 0x00415F20
+  Stack: 8192 KB at Xbox VA 0x00780000 (ESP = 0x00F7FFF0)
+  TLS: 148-byte block at 0x00770000, fs:[4] = 0x00770094 (index will be -37)
+  TIB: fake TIB at VA 0x4000, TLS at 0x00760000, RW data at 0x00700000
+  Contiguous window: 64 MB at Xbox VA 0x80000000
+  NV2A register aperture: 16 MB at Xbox VA 0xFD000000 (zeroed, no register semantics)
+  APU: 0xFE800000..0xFE830000 trapped for MMIO (GP/EP DSP memory left as RAM)
+  AC97: bus-master writes trapped at 0xFEC00000 (channel reset completes on write)
+  AC97: codec reported ready at 0xFEC00130 (DirectSound will initialise)
+  MCPX device aperture: 8 MB at Xbox VA 0xFE800000 (APU/AC97/USB/NIC, zeroed)
+  Flash ROM aperture: 1 MB at Xbox VA 0xFF000000 (zeroed, not a real BIOS image)
+  NV2A busy-bit ack: 5 register(s) acknowledged
+  Kernel: fake PE header at Xbox VA 0x80010000 (native 0000000080020000)
+  Heap: 112 MB at Xbox VA 0x00F80000-0x08000000
+  Mirror 15: FAILED at 0000000078010000 (error 487)
+  Mirror 16: skipped, overlaps the contiguous window at 0x80000000
+  RAM mirror: 26/28 views mapped (covers 3456 MB)
+  Tiled aperture alias verified (tiled 0xF0000000 == contiguous 0x80000000)
+  Tiled aperture: 128 MB at Xbox VA 0xF0000000 (aliases the contiguous window)
+xbox_MemoryLayoutInit: complete
+[BOOT] guest map 128 MB
+[APU] DSP GP/EP initialized (STUBBED - passthrough mode)
+[XA2] XAudio2 initialized (48000 Hz stereo 16-bit, 4 x 1024-sample buffers, 85.3 ms queued max)
+[APU] Using XAudio2 audio backend (pacing: 2048..4096 samples queued)
+[APU] MCPX APU initialized (standalone)
+[APU]   RAM pointer: 0000000000010000
+[APU]   MMIO base: 0xFE800000 (512KB)
+[APU]   VP: 256 max voices, 32 samples/frame
+[BOOT] emulated APU up
+  Kernel thunk bridge: resolving 151 entries at 0x00415F20
+  Kernel data exports: initialized at Xbox VA 0x00740000
+  Kernel thunk bridge: 151/151 resolved (151 bridged, 0 stub)
+  Synthetic VA range: 0xFE000000-0xFE000258
+[VK] device 0: AMD Radeon RX 7900 XT (type 2, Vulkan 1.4)
+[VK] device 1: AMD Radeon(TM) Graphics (type 1, Vulkan 1.4)
+[VK] device: AMD Radeon RX 7900 XT
+[VK] ring of 49152 KB (usage 3): memory type 3, flags E
+[VK] ring of 16384 KB (usage 80): memory type 1, flags 6
+[VK] ring of 8192 KB (usage 40): memory type 1, flags 6
+[VK] present: swapchain 2560x1440, 3 images, format 44, V-Sync (FIFO)
+[VK] renderer ready
+[BOOT] entry 0x00159E95, esp 0x00F7FFF0. Starting.
+  [KERNEL] #1: ordinal 255 (slot 142) esp=0x00F7FF9C ret=0x0015C502
+  [KERNEL] PsCreateSystemThreadEx #1: routine=0x0015C42B ctx1=0x00159E21 ctx2=0x00000000
+  [HEAP] #1: size=160 align=16 → 0x00F80000..0x00F800A0 (used 160/117964800)
+  [KERNEL] PsCreateSystemThreadEx: 148-byte TLS at 0x00F80000, fs:[4] = 0x00F80094
+  [KERNEL] #2: ordinal 277 (slot 52) esp=0x00F7FF40 ret=0x0015C1CA
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #3: ordinal 294 (slot 51) esp=0x00F7FF40 ret=0x0015C1ED
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #4: ordinal 47 (slot 34) esp=0x00F7FF00 ret=0x0015AF3E
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #5: ordinal 107 (slot 77) esp=0x00F7FEE8 ret=0x0015F097
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #6: ordinal 113 (slot 76) esp=0x00F7FEEC ret=0x0015F0A4
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #7: ordinal 24 (slot 36) esp=0x00F7FEC4 ret=0x0015B405
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #8: ordinal 301 (slot 1) esp=0x00F7FED4 ret=0x0015B40C
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #9: ordinal 149 (slot 72) esp=0x00F7FEE0 ret=0x0015F06C
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #10: ordinal 184 (slot 68) esp=0x00F7FE50 ret=0x0015DDD2
+  [KERNEL] NtAllocateVirtualMemory: base=0x00000000 size=1048576 type=0x2000 prot=0x4
+  [HEAP] #2: size=1048576 align=4096 → 0x00F81000..0x01081000 (used 1052672/117964800)
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #11: ordinal 184 (slot 68) esp=0x00F7FE50 ret=0x0015DE0B
+  [KERNEL] NtAllocateVirtualMemory: base=0x00F81000 size=4096 type=0x1000 prot=0x4
+  [KERNEL] → MEM_COMMIT on existing region 0x00F81000, no-op
+  [KERNEL] → returned 0x00000000
+  [HEAP] #3: size=288 align=16 → 0x01081000..0x01081120 (used 1052960/117964800)
+  [KERNEL] #12: ordinal 291 (slot 70) esp=0x00F7FE60 ret=0x0015DF13
+  [KERNEL] → returned 0x00000000
+  [MKB] mouse+keyboard captured (F9 releases; sens=1.00 dz=0.22 full=40; 31 bindings)
+  [KERNEL] #13: ordinal 202 (slot 5) esp=0x00F7FEA8 ret=0x0015A9F9
+  [PATH] \Device\Harddisk0\partition1\ -> partition image
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #14: ordinal 218 (slot 4) esp=0x00F7FEAC ret=0x0015AA14
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #15: ordinal 187 (slot 3) esp=0x00F7FEBC ret=0x0015AA1F
+  [KERNEL] NtClose: handle=0x48000001
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #16: ordinal 67 (slot 10) esp=0x00F7FF00 ret=0x0015AFBD
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #17: ordinal 190 (slot 25) esp=0x00F7FC18 ret=0x0015AB67
+  [PATH] \Device\Harddisk0\partition1\TDATA
+  [FILE] \Device\Harddisk0\partition1\TDATA (disp 3 opts 0x4021 from 0x0015AB67) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #18: ordinal 187 (slot 3) esp=0x00F7FC38 ret=0x0015AB77
+  [KERNEL] NtClose: handle=0x48000001
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #19: ordinal 289 (slot 6) esp=0x00F7FC34 ret=0x0015ABE7
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #20: ordinal 190 (slot 25) esp=0x00F7FC18 ret=0x0015AC24
+  [PATH] \Device\Harddisk0\partition1\TDATA\43430016
+  [FILE] \Device\Harddisk0\partition1\TDATA\43430016 (disp 3 opts 0x4021 from 0x0015AC24) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #21: ordinal 187 (slot 3) esp=0x00F7FC38 ret=0x0015AE37
+  [KERNEL] NtClose: handle=0x48000001
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #22: ordinal 67 (slot 10) esp=0x00F7FC34 ret=0x0015AE49
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #23: ordinal 190 (slot 25) esp=0x00F7FC18 ret=0x0015AB67
+  [PATH] \Device\Harddisk0\partition1\UDATA
+  [FILE] \Device\Harddisk0\partition1\UDATA (disp 3 opts 0x4021 from 0x0015AB67) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #24: ordinal 187 (slot 3) esp=0x00F7FC38 ret=0x0015AB77
+  [KERNEL] NtClose: handle=0x48000001
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #25: ordinal 289 (slot 6) esp=0x00F7FC34 ret=0x0015ABE7
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #26: ordinal 190 (slot 25) esp=0x00F7FC18 ret=0x0015AC24
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016
+  [FILE] \Device\Harddisk0\partition1\UDATA\43430016 (disp 3 opts 0x4021 from 0x0015AC24) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #27: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C987
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #28: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #29: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #30: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #31: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #32: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #33: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #34: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #35: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #36: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #37: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #38: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #39: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #40: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #41: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #42: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #43: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #44: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #45: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #46: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #47: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #48: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #49: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #50: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #51: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #52: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #53: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #54: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #55: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #56: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #57: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #58: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #59: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #60: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #61: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #62: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #63: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #64: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #65: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #66: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #67: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #68: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #69: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #70: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #71: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #72: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #73: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #74: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #75: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #76: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C987
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #77: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #78: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #79: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #80: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #81: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #82: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #83: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #84: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #85: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #86: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #87: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #88: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #89: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #90: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #91: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #92: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #93: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #94: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #95: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #96: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #97: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #98: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #99: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #100: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #101: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #102: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #103: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #104: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #105: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #106: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #107: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #108: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #109: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #110: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #111: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #112: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #113: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #114: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #115: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #116: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000001
+  [KERNEL] #117: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C987
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #118: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #119: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #120: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #121: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #122: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #123: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #124: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #125: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #126: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #127: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #128: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #129: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #130: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #131: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #132: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #133: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #134: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #135: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #136: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #137: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #138: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #139: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #140: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #141: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #142: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #143: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #144: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #145: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #146: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #147: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #148: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #149: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #150: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #151: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #152: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #153: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #154: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #155: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #156: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #157: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #158: ordinal 289 (slot 6) esp=0x00F7FC0C ret=0x0015C9A3
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #159: ordinal 279 (slot 64) esp=0x00F7FC08 ret=0x0015C9B3
+  [KERNEL] → returned 0x00000001
+  [KERNEL] #160: ordinal 289 (slot 6) esp=0x00F7FC34 ret=0x0015ACDD
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #161: ordinal 190 (slot 25) esp=0x00F7FC18 ret=0x0015AD0D
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\TitleMeta.xbx
+  [FILE] \Device\Harddisk0\partition1\UDATA\43430016\TitleMeta.xbx (disp 3 opts 0x22 from 0x0015AD0D) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #162: ordinal 211 (slot 32) esp=0x00F7FC28 ret=0x0015AD2F
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #163: ordinal 187 (slot 3) esp=0x00F7FC38 ret=0x0015ADDC
+  [KERNEL] NtClose: handle=0x48000002
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #164: ordinal 289 (slot 6) esp=0x00F7FBBC ret=0x0015AA74
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #165: ordinal 190 (slot 25) esp=0x00F7FBA0 ret=0x0015AAA4
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\TitleImage.xbx
+  [FILE] \Device\Harddisk0\partition1\UDATA\43430016\TitleImage.xbx (disp 3 opts 0x22 from 0x0015AAA4) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #166: ordinal 211 (slot 32) esp=0x00F7FBB0 ret=0x0015AAC1
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #167: ordinal 187 (slot 3) esp=0x00F7FBC0 ret=0x0015AB0D
+  [KERNEL] NtClose: handle=0x48000002
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #168: ordinal 289 (slot 6) esp=0x00F7FBBC ret=0x0015AA74
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #169: ordinal 190 (slot 25) esp=0x00F7FBA0 ret=0x0015AAA4
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\SaveImage.xbx
+  [FILE] \Device\Harddisk0\partition1\UDATA\43430016\SaveImage.xbx (disp 3 opts 0x22 from 0x0015AAA4) -> 0x00000000
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #170: ordinal 211 (slot 32) esp=0x00F7FBB0 ret=0x0015AAC1
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #171: ordinal 187 (slot 3) esp=0x00F7FBC0 ret=0x0015AB0D
+  [KERNEL] NtClose: handle=0x48000002
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #172: ordinal 187 (slot 3) esp=0x00F7FC38 ret=0x0015AE37
+  [KERNEL] NtClose: handle=0x48000001
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #173: ordinal 67 (slot 10) esp=0x00F7FC34 ret=0x0015AE49
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #174: ordinal 202 (slot 5) esp=0x00F7FB80 ret=0x00158A49
+  [PATH] \Device\Harddisk0\partition0 -> partition image
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #175: ordinal 219 (slot 9) esp=0x00F7FB78 ret=0x00158A7E
+  [READ] from=0x00158A7E ev=00000000 apc=00000000 @2048 want=512 got=512 st=0x00000000  2A 2A 2A 2A
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #176: ordinal 236 (slot 7) esp=0x00F7FB70 ret=0x00158C3E
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #177: ordinal 187 (slot 3) esp=0x00F7FB94 ret=0x00158C49
+  [KERNEL] NtClose: handle=0x48000001
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #178: ordinal 289 (slot 6) esp=0x00F7FDD4 ret=0x00158CCA
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #179: ordinal 289 (slot 6) esp=0x00F7FDD4 ret=0x00158CD7
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #180: ordinal 202 (slot 5) esp=0x00F7FD40 ret=0x0015B0C3
+  [PATH] \Device\Harddisk0\Partition5 -> partition image
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #181: ordinal 196 (slot 35) esp=0x00F7FD28 ret=0x0015B0F5
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #182: ordinal 196 (slot 35) esp=0x00F7FD28 ret=0x0015B131
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #183: ordinal 277 (slot 52) esp=0x00F7FB7C ret=0x0015E00A
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #184: ordinal 184 (slot 68) esp=0x00F7FB14 ret=0x0015CC85
+  [KERNEL] NtAllocateVirtualMemory: base=0x00F82000 size=8192 type=0x1000 prot=0x4
+  [KERNEL] → MEM_COMMIT on existing region 0x00F82000, no-op
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #185: ordinal 294 (slot 51) esp=0x00F7FB7C ret=0x0015E5BB
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #186: ordinal 128 (slot 24) esp=0x00F7FD4C ret=0x0015B24B
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #187: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B273
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #188: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #189: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #190: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #191: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #192: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #193: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #194: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #195: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #196: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #197: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #198: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #199: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [KERNEL] #200: ordinal 236 (slot 7) esp=0x00F7FD30 ret=0x0015B308
+  [KERNEL] → returned 0x00000000
+  [FILE] NtFsControlFile(0x90020) - stub
+  [PATH] \Device\Harddisk0\Partition5\ -> partition image
+  [PATH] \Device\Harddisk0\partition1\TDATA\43430016\$u\contentmeta.xbx
+  [FILE] t:\$u\contentmeta.xbx (disp 1) -> 0xC000003A FAILED (win32 err=3 ERROR_PATH_NOT_FOUND)
+  [CONTIG] t=0.0s alloc 0x80001000 4 KB: in use 4 KB, peak 4 KB, high-water 8 KB (allocs=1 frees=0)
+  [CONTIG] t=0.0s alloc 0x80002000 2048 KB: in use 2052 KB, peak 2052 KB, high-water 2056 KB (allocs=2 frees=0)
+  [KERNEL] KeConnectInterrupt: vector 3 -> routine 0x0034BDF0 context 0x00356528
+  [PORT] outb 0x80C0 = 0x1 (ignored)
+[UNIMPL] untranslated instruction REACHED: `wbinvd` at 0x0034ACF4 (a no-op; set RECOMP_UNIMPL_TRAP=1 to stop here)
+[DW] KickOff waits for the kick 1 before it (DW_KICK_LAG)
+  [NV2A] vblank -> ISR claimed it
+  [CONTIG] t=0.0s alloc 0x80204000 2400 KB: in use 4452 KB, peak 4452 KB, high-water 4464 KB (allocs=3 frees=0)
+  [KERNEL] event 0x003566BC built by the title: host event created (notification)
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [CONTIG] t=0.0s alloc 0x8045C000 1200 KB: in use 5652 KB, peak 5652 KB, high-water 5664 KB (allocs=4 frees=0)
+  [HEAP] #4: size=1048576 align=4096 → 0x01082000..0x01182000 (used 2105344/117964800)
+  [HEAP] #5: size=7168 align=16 → 0x01182000..0x01183C00 (used 2112512/117964800)
+  [HEAP] #6: size=432 align=16 → 0x01183C00..0x01183DB0 (used 2112944/117964800)
+  [HEAP] #7: size=432 align=16 → 0x01183DB0..0x01183F60 (used 2113376/117964800)
+  [HEAP] #8: size=432 align=16 → 0x01183F60..0x01184110 (used 2113808/117964800)
+  [HEAP] #9: size=432 align=16 → 0x01184110..0x011842C0 (used 2114240/117964800)
+  [HEAP] #10: size=432 align=16 → 0x011842C0..0x01184470 (used 2114672/117964800)
+  [HEAP] #11: size=432 align=16 → 0x01184470..0x01184620 (used 2115104/117964800)
+  [HEAP] #12: size=432 align=16 → 0x01184620..0x011847D0 (used 2115536/117964800)
+  [HEAP] #13: size=432 align=16 → 0x011847D0..0x01184980 (used 2115968/117964800)
+  [CONTIG] t=0.0s alloc 0x80588000 12 KB: in use 5664 KB, peak 5664 KB, high-water 5676 KB (allocs=5 frees=0)
+  [KERNEL] KeConnectInterrupt: vector 1 -> routine 0x00413BD1 context 0x800008C4
+  [PATH] \Device\CdRom0\packfile.pck
+[BOOT] D3D device 0x00354900: fence semaphore at 0x80001000 registered with the executor
+  [FILE] D:\packfile.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\packfile.pck
+  [PATH] \Device\CdRom0\packfile.pck
+  [FILE] D:\packfile.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\packfile.pck
+  [HEAP] #14: size=65536 align=4096 → 0x01185000..0x01195000 (used 2183168/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @110108672 want=65536 got=646 st=0x00000000  62 78 6D 6C
+  [NV2A] vblank -> ISR claimed it
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109533184 want=65536 got=65536 st=0x00000000  74 69 63 6C
+  [HEAP] free #1 va=0x01185000 blocks=14
+  [HEAP] #15: size=131072 align=4096 → 0x01195000..0x011B5000 (used 2314240/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109598720 want=131072 got=131072 st=0x00000000  01 20 01 00
+  [PATH] \Device\CdRom0\LvlSingl.pck
+  [NV2A] vblank -> ISR claimed it
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [KERNEL] KeSetEvent(title event 0x003566BC) prev 1
+  [PB] fence search: ring 00002000..00002280, 1 release(s) found, newest 00000005, counter 00000003 -> catch up to 00000005
+  [PB] fence word stuck at 00000003 with PUT idle at 00002280; the ring holds a release up to 00000005: caught up (#1)
+  [FILE] D:\LvlSingl.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\LvlSingl.pck
+  [PATH] \Device\CdRom0\LvlSingl.pck
+  [FILE] D:\LvlSingl.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\LvlSingl.pck
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @207710208 want=65536 got=165 st=0x00000000  67 74 72 61
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @207337472 want=65536 got=65536 st=0x00000000  FF FF 02 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @207403008 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [PATH] \Device\CdRom0\LvlMulti.pck
+  [FILE] D:\LvlMulti.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\LvlMulti.pck
+  [PATH] \Device\CdRom0\LvlMulti.pck
+  [FILE] D:\LvlMulti.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\LvlMulti.pck
+  [HEAP] #16: size=65536 align=4096 → 0x011B5000..0x011C5000 (used 2379776/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @148744192 want=65536 got=272 st=0x00000000  65 6C 73 2F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @148699136 want=65536 got=45328 st=0x00000000  00 FF FF 02
+  [PATH] \Device\CdRom0\SinglStr.pck
+  [FILE] D:\SinglStr.pck (disp 1) -> 0xC0000001 FAILED (win32 err=32 ERROR_SHARING_VIOLATION)
+  [PATH] \Device\CdRom0\MultiStr.pck
+  [PB] fence search: ring 00002000..00002280, 1 release(s) found, newest 00000005, counter 00000005 -> nothing ahead 00000000
+  [PB] fence search: ring 00002000..00002280, 1 release(s) found, newest 00000005, counter 00000005 -> nothing ahead 00000000
+  [FILE] D:\MultiStr.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\MultiStr.pck
+  [PATH] \Device\CdRom0\MultiStr.pck
+  [FILE] D:\MultiStr.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\MultiStr.pck
+  [HEAP] #17: size=65536 align=4096 → 0x011C5000..0x011D5000 (used 2445312/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @361854976 want=65536 got=409 st=0x00000000  6C 61 79 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @361850880 want=65536 got=4505 st=0x00000000  00 00 00 28
+  [PATH] \Device\CdRom0\movies1.pck
+  [FILE] D:\movies1.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies1.pck
+  [PATH] \Device\CdRom0\movies1.pck
+  [FILE] D:\movies1.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies1.pck
+  [HEAP] #18: size=65536 align=4096 → 0x011D5000..0x011E5000 (used 2510848/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @341432320 want=65536 got=1588 st=0x00000000  40 00 00 00
+  [PATH] \Device\CdRom0\movies2.pck
+  [FILE] D:\movies2.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies2.pck
+  [PATH] \Device\CdRom0\movies2.pck
+  [FILE] D:\movies2.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies2.pck
+  [HEAP] #19: size=65536 align=4096 → 0x011E5000..0x011F5000 (used 2576384/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @292769792 want=65536 got=1224 st=0x00000000  40 00 00 00
+  [PATH] \Device\CdRom0\movies3.pck
+  [FILE] D:\movies3.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies3.pck
+  [PATH] \Device\CdRom0\movies3.pck
+  [FILE] D:\movies3.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies3.pck
+  [HEAP] #20: size=65536 align=4096 → 0x011F5000..0x01205000 (used 2641920/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @213651456 want=65536 got=1296 st=0x00000000  40 00 00 00
+  [PATH] \Device\CdRom0\movies4.pck
+  [FILE] D:\movies4.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies4.pck
+  [PATH] \Device\CdRom0\movies4.pck
+  [FILE] D:\movies4.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\movies4.pck
+  [HEAP] #21: size=65536 align=4096 → 0x01205000..0x01215000 (used 2707456/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @207534080 want=65536 got=1296 st=0x00000000  40 00 00 00
+  [PATH] \Device\CdRom0\audioAmb.pck
+  [FILE] D:\audioAmb.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioAmb.pck
+  [PATH] \Device\CdRom0\audioAmb.pck
+  [FILE] D:\audioAmb.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioAmb.pck
+  [HEAP] #22: size=65536 align=4096 → 0x01215000..0x01225000 (used 2772992/117964800)
+  [KERNEL] summary: 3072 total calls, latest ordinal 219 (slot 9) esp=0x00F7D9C4
+  [KERNEL]   ordinal 277 x1088
+  [KERNEL]   ordinal 294 x1088
+  [KERNEL]   ordinal 119 x188
+  [KERNEL]   ordinal 145 x188
+  [KERNEL]   ordinal 289 x114
+  [KERNEL]   ordinal 279 x65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @129249280 want=65536 got=493 st=0x00000000  69 65 6E 74
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @129236992 want=65536 got=12781 st=0x00000000  53 44 42 4B
+  [PATH] \Device\CdRom0\audioDlg.pck
+  [FILE] D:\audioDlg.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioDlg.pck
+  [PATH] \Device\CdRom0\audioDlg.pck
+  [FILE] D:\audioDlg.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioDlg.pck
+  [HEAP] #23: size=65536 align=4096 → 0x01225000..0x01235000 (used 2838528/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @67086336 want=65536 got=613 st=0x00000000  6C 6F 67 5F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @67084288 want=65536 got=2661 st=0x00000000  00 00 00 00
+  [PATH] \Device\CdRom0\audioEmt.pck
+  [FILE] D:\audioEmt.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioEmt.pck
+  [PATH] \Device\CdRom0\audioEmt.pck
+  [FILE] D:\audioEmt.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioEmt.pck
+  [HEAP] #24: size=65536 align=4096 → 0x01235000..0x01245000 (used 2904064/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @102549504 want=65536 got=141 st=0x00000000  6D 30 39 61
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @102537216 want=65536 got=12429 st=0x00000000  00 0E 00 0F
+  [PATH] \Device\CdRom0\audioMu1.pck
+  [FILE] D:\audioMu1.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioMu1.pck
+  [PATH] \Device\CdRom0\audioMu1.pck
+  [FILE] D:\audioMu1.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioMu1.pck
+  [HEAP] #25: size=65536 align=4096 → 0x01245000..0x01255000 (used 2969600/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @165787648 want=65536 got=225 st=0x00000000  73 65 2F 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @165779456 want=65536 got=8417 st=0x00000000  53 44 42 4B
+  [PATH] \Device\CdRom0\audioMu2.pck
+  [FILE] D:\audioMu2.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioMu2.pck
+  [PATH] \Device\CdRom0\audioMu2.pck
+  [FILE] D:\audioMu2.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioMu2.pck
+  [HEAP] #26: size=65536 align=4096 → 0x01255000..0x01265000 (used 3035136/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @152338432 want=65536 got=388 st=0x00000000  2F 6D 75 73
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @152332288 want=65536 got=6532 st=0x00000000  01 00 0C 00
+  [PATH] \Device\CdRom0\audio.pck
+  [FILE] D:\audio.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audio.pck
+  [PATH] \Device\CdRom0\audio.pck
+  [FILE] D:\audio.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audio.pck
+  [HEAP] #27: size=65536 align=4096 → 0x01265000..0x01275000 (used 3100672/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @137740288 want=65536 got=984 st=0x00000000  61 75 64 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @137682944 want=65536 got=58328 st=0x00000000  53 44 42 4B
+  [PATH] \Device\CdRom0\AudStrSP.pck
+  [FILE] D:\AudStrSP.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\AudStrSP.pck
+  [PATH] \Device\CdRom0\AudStrSP.pck
+  [FILE] D:\AudStrSP.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\AudStrSP.pck
+  [HEAP] #28: size=65536 align=4096 → 0x01275000..0x01285000 (used 3166208/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @299491328 want=65536 got=724 st=0x00000000  67 6C 65 70
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @299487232 want=65536 got=4820 st=0x00000000  00 00 19 00
+  [PATH] \Device\CdRom0\AudStrMP.pck
+  [FILE] D:\AudStrMP.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\AudStrMP.pck
+  [PATH] \Device\CdRom0\AudStrMP.pck
+  [FILE] D:\AudStrMP.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\AudStrMP.pck
+  [HEAP] #29: size=65536 align=4096 → 0x01285000..0x01295000 (used 3231744/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @186361856 want=65536 got=1005 st=0x00000000  6F 6F 64 2F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @186359808 want=65536 got=3053 st=0x00000000  6C 6F 6F 70
+  [HEAP] free #2 va=0x01195000 blocks=29
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93212672 want=65536 got=65536 st=0x00000000  16 00 00 00
+  [CONTIG] t=3.2s alloc 0x8058B000 256 KB: in use 5920 KB, peak 5920 KB, high-water 5932 KB (allocs=6 frees=0)
+  [HEAP] free #3 va=0x01195000 blocks=31
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @104939520 want=65536 got=65536 st=0x00000000  00 00 01 00
+  [HEAP] free #4 va=0x011AE000 blocks=32
+  [HEAP] #30: size=378880 align=4096 → 0x01295000..0x012F1800 (used 3610624/117964800)
+  [HEAP] free #5 va=0x0119E000 blocks=33
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @105005056 want=317440 got=317440 st=0x00000000  00 01 00 00
+  [CONTIG] t=3.3s alloc 0x805CB000 256 KB: in use 6176 KB, peak 6176 KB, high-water 6188 KB (allocs=7 frees=0)
+  [HEAP] free #6 va=0x01295000 blocks=33
+[GPU] ZMIN_MAX_CONTROL 0x1: beyond near/far culled
+[VK] internal resolution: 3x
+[VK] frame interpolation on
+[VK] fog on
+[VK] frame 1: 3 draws (0 fogged), 6 triangles, 1 texture uploads, 1 submissions so far; 3x surfaces: 0 reloads skipped, 1 done
+[VK] ring of 16384 KB (usage 80): memory type 1, flags 6
+[VK] ring of 8192 KB (usage 40): memory type 1, flags 6
+[VK] interpolation: presenter running
+[VK] present: first frame handed to the presenter
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [AV] SetDisplayMode mode=0x080F0D12 format=0x00000012 pitch=2560 fb=0x00204000
+[VK] present: swapchain 2560x1440, 3 images, format 44, V-Sync (FIFO)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93638656 want=268288 got=268288 st=0x00000000  16 00 00 00
+  [CONTIG] t=3.5s alloc 0x8060B000 256 KB: in use 6432 KB, peak 6432 KB, high-water 6444 KB (allocs=8 frees=0)
+  [CONTIG] t=3.5s alloc 0x8064B000 256 KB: in use 6688 KB, peak 6688 KB, high-water 6700 KB (allocs=9 frees=0)
+  [HEAP] free #7 va=0x01295000 blocks=34
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93911040 want=65536 got=65536 st=0x00000000  00 DF 3E 22
+  [HEAP] free #8 va=0x01195000 blocks=34
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93904896 want=65536 got=65536 st=0x00000000  01 01 01 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103544832 want=65536 got=65536 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @104495104 want=65536 got=65536 st=0x00000000  6C 69 6D 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47755264 want=196608 got=196608 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47699968 want=65536 got=65536 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47552512 want=65536 got=65536 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93202432 want=65536 got=65536 st=0x00000000  03 D6 00 7F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49805312 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49803264 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49170432 want=65536 got=65536 st=0x00000000  23 03 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48496640 want=65536 got=65536 st=0x00000000  3A 5C 59 45
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49250304 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48388096 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48168960 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48080896 want=65536 got=65536 st=0x00000000  24 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49573888 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48410624 want=65536 got=65536 st=0x00000000  46 88 A1 3D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48504832 want=65536 got=65536 st=0x00000000  33 33 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49158144 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49754112 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49942528 want=65536 got=65536 st=0x00000000  19 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49410048 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49145856 want=65536 got=65536 st=0x00000000  A0 02 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49278976 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49276928 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48689152 want=65536 got=65536 st=0x00000000  00 00 3F 21
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49479680 want=65536 got=65536 st=0x00000000  50 09 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49254400 want=65536 got=65536 st=0x00000000  00 10 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48347136 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49459200 want=65536 got=65536 st=0x00000000  48 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48617472 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48414720 want=65536 got=65536 st=0x00000000  40 01 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48355328 want=65536 got=65536 st=0x00000000  21 C0 CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48623616 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49737728 want=65536 got=65536 st=0x00000000  00 00 00 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47992832 want=65536 got=65536 st=0x00000000  00 01 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49403904 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49522688 want=65536 got=65536 st=0x00000000  74 75 72 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48648192 want=65536 got=65536 st=0x00000000  00 80 3F 6A
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49555456 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49764352 want=65536 got=65536 st=0x00000000  FF FF FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49045504 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48998400 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48304128 want=65536 got=65536 st=0x00000000  78 05 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48433152 want=65536 got=65536 st=0x00000000  29 C0 CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48590848 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48308224 want=65536 got=65536 st=0x00000000  00 00 80 3E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48377856 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49201152 want=65536 got=65536 st=0x00000000  05 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49289216 want=65536 got=65536 st=0x00000000  FF FF 03 18
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48705536 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48039936 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49477632 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47996928 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48443392 want=65536 got=65536 st=0x00000000  28 02 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48027648 want=65536 got=65536 st=0x00000000  22 08 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49883136 want=65536 got=65536 st=0x00000000  29 C0 CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48099328 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49027072 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109240320 want=65536 got=65536 st=0x00000000  2B 01 0B 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48398336 want=65536 got=65536 st=0x00000000  29 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49141760 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48566272 want=65536 got=65536 st=0x00000000  C0 CD CD 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49948672 want=65536 got=65536 st=0x00000000  C8 02 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48621568 want=65536 got=65536 st=0x00000000  00 80 3F 9B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49860608 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48001024 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48097280 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48015360 want=65536 got=65536 st=0x00000000  EB FF FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48615424 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49743872 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49154048 want=65536 got=65536 st=0x00000000  0C 0F 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49135616 want=65536 got=65536 st=0x00000000  00 FF 45 47
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49549312 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48666624 want=65536 got=65536 st=0x00000000  4C 54 5C 44
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49487872 want=65536 got=65536 st=0x00000000  2C 10 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49391616 want=65536 got=65536 st=0x00000000  21 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49266688 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49989632 want=65536 got=65536 st=0x00000000  00 00 00 E6
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48982016 want=65536 got=65536 st=0x00000000  F1 0C BF 0E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49154048 want=65536 got=65536 st=0x00000000  0C 0F 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49575936 want=65536 got=65536 st=0x00000000  21 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48207872 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49272832 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48377856 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49915904 want=65536 got=65536 st=0x00000000  E6 42 C0 3D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49166336 want=65536 got=65536 st=0x00000000  0D F0 AD BA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49948672 want=65536 got=65536 st=0x00000000  C8 02 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49541120 want=65536 got=65536 st=0x00000000  54 F0 FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109410304 want=75776 got=75776 st=0x00000000  01 00 00 00
+  [HEAP] #31: size=2097152 align=4096 → 0x012F2000..0x014F2000 (used 5709824/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48451584 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48414720 want=65536 got=65536 st=0x00000000  40 01 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49825792 want=65536 got=65536 st=0x00000000  AE EC FE 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48429056 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49854464 want=65536 got=65536 st=0x00000000  48 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48201728 want=65536 got=65536 st=0x00000000  21 E0 AD BA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49567744 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49889280 want=65536 got=65536 st=0x00000000  18 12 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48375808 want=65536 got=65536 st=0x00000000  E1 0A 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48058368 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48377856 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @108804096 want=65536 got=65536 st=0x00000000  FF FF 5E 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47992832 want=65536 got=65536 st=0x00000000  00 01 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49752064 want=65536 got=65536 st=0x00000000  74 75 72 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48015360 want=65536 got=65536 st=0x00000000  EB FF FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49711104 want=65536 got=65536 st=0x00000000  6B 06 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49510400 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48453632 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49520640 want=65536 got=65536 st=0x00000000  21 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @108861440 want=360448 got=360448 st=0x00000000  01 00 00 00
+  [HEAP] #32: size=4194304 align=4096 → 0x014F2000..0x018F2000 (used 9904128/117964800)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @108589056 want=217088 got=217088 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @108812288 want=65536 got=65536 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48994304 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49225728 want=65536 got=65536 st=0x00000000  00 00 10 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49207296 want=65536 got=65536 st=0x00000000  BC C0 2C BA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49018880 want=65536 got=65536 st=0x00000000  00 80 3F 21
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48087040 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48611328 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48939008 want=65536 got=65536 st=0x00000000  10 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49532928 want=65536 got=65536 st=0x00000000  B3 E1 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48441344 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48314368 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49053696 want=65536 got=65536 st=0x00000000  07 00 00 44
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49494016 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48982016 want=65536 got=65536 st=0x00000000  F1 0C BF 0E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49049600 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49274880 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49506304 want=65536 got=65536 st=0x00000000  AC 14 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48482304 want=65536 got=65536 st=0x00000000  1D 00 D7 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48459776 want=65536 got=65536 st=0x00000000  62 01 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49160192 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48416768 want=65536 got=65536 st=0x00000000  BE F2 C5 3C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49534976 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49719296 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49833984 want=65536 got=65536 st=0x00000000  45 4C 54 5C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48674816 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48052224 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49295360 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109219840 want=65536 got=65536 st=0x00000000  02 00 DE 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109285376 want=112640 got=112640 st=0x00000000  FF FF 06 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48291840 want=65536 got=65536 st=0x00000000  68 0E 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49143808 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48179200 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49944576 want=65536 got=65536 st=0x00000000  53 6D 6B 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48678912 want=65536 got=65536 st=0x00000000  00 00 00 05
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49721344 want=65536 got=65536 st=0x00000000  21 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48429056 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48128000 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49156096 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49563648 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49559552 want=65536 got=65536 st=0x00000000  38 0F 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49164288 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49010688 want=65536 got=65536 st=0x00000000  05 00 00 82
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49473536 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49389568 want=65536 got=65536 st=0x00000000  F4 02 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49156096 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48691200 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48011264 want=65536 got=65536 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48107520 want=65536 got=65536 st=0x00000000  CD CD CD CD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49545216 want=65536 got=65536 st=0x00000000  71 0F 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49047552 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49229824 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49909760 want=65536 got=65536 st=0x00000000  20 1D 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48023552 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48449536 want=65536 got=65536 st=0x00000000  44 57 5C 41
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49551360 want=65536 got=65536 st=0x00000000  00 00 80 3F
+[DW] gamepad: XPP's XInput answered from the host controller
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @95125504 want=65536 got=65536 st=0x00000000  00 1C 00 00
+  [PATH] \Device\CdRom0\audioAmb.pck
+  [FILE] D:\audioAmb.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioDlg.pck
+  [FILE] D:\audioDlg.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioEmt.pck
+  [FILE] D:\audioEmt.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioMu1.pck
+  [FILE] D:\audioMu1.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audioMu2.pck
+  [FILE] D:\audioMu2.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\CdRom0\audio.pck
+  [FILE] D:\audio.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [CONTIG] t=3.8s alloc 0x80202000 8 KB: in use 6696 KB, peak 6696 KB, high-water 6700 KB (allocs=10 frees=0)
+  [CONTIG] t=3.8s alloc 0x8068B000 24 KB: in use 6720 KB, peak 6720 KB, high-water 6724 KB (allocs=11 frees=0)
+  [CONTIG] t=3.8s alloc 0x80691000 4 KB: in use 6724 KB, peak 6724 KB, high-water 6728 KB (allocs=12 frees=0)
+  [CONTIG] t=3.8s alloc 0x80698000 32 KB: in use 6756 KB, peak 6756 KB, high-water 6784 KB (allocs=13 frees=0)
+  [CONTIG] t=3.8s alloc 0x806A0000 20 KB: in use 6776 KB, peak 6776 KB, high-water 6804 KB (allocs=14 frees=0)
+  [CONTIG] t=3.8s alloc 0x80694000 16 KB: in use 6792 KB, peak 6792 KB, high-water 6804 KB (allocs=15 frees=0)
+  [CONTIG] t=3.8s alloc 0x806A8000 64 KB: in use 6856 KB, peak 6856 KB, high-water 6880 KB (allocs=16 frees=0)
+  [KERNEL] KeConnectInterrupt: vector 6 -> routine 0x003B2C8B context 0x011A5110
+[APU] started by the title (SECTL=0000000F FECTL=0000100F)
+[APU] DSP doorbell ack: auto (GP scratch page 0 + 0x810, from GPSADDR)
+[APU] DSP doorbell: GP scratch SGE table 0x006D8000 maps page 0x006CC000 (win); doorbell at physical 0x006CC810
+  [KERNEL] KeConnectInterrupt: vector 5 -> routine 0x003ACC04 context 0x011A50F4
+[APU] DSP doorbell (auto): command 0x00000003 acknowledged
+  [PATH] \Device\Harddisk0\partition0 -> partition image
+  [READ] from=0x003666C5 ev=00000000 apc=00000000 @4096 want=512 got=512 st=0x00000000  68 25 13 79
+  [PATH] \Device\Harddisk0\partition1\TDATA\43430016\
+[APU] DSP doorbell (auto): command 0x00000002 acknowledged
+  [KERNEL] KeConnectInterrupt: vector 0 -> routine 0x0035D68E context 0x012A5000
+  [PATH] \Device\Harddisk0\partition0 -> partition image
+  [PATH] \Device\Harddisk0\partition1\CACHE\LocalCache00.bin
+  [FILE] \Device\Harddisk0\partition1\CACHE\LocalCache00.bin (disp 3 opts 0x68 from 0x0037B108) -> 0x00000000
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @0 want=512 got=512 st=0x00000000  0F 00 00 00
+  [READ] from=0x003666C5 ev=00000000 apc=00000000 @4608 want=512 got=0 st=0xC0000011  00 00 00 00
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6DC type=1 init=0 → status=0x00000000 handle=0x00000B54
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B50
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B4C
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B48
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B44
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B40
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B3C
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B38
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D6D8 type=0 init=0 → status=0x00000000 handle=0x00000B34
+  [KERNEL] event handle 0x4800001C: guest KEVENT body at 0x011B4FF0
+  [BRIDGE] NtCreateEvent: handle_ptr=0x00F7D964 type=1 init=0 → status=0x00000000 handle=0x00000B30
+  [PATH] \Device\Harddisk0\partition1\CACHE\LocalCache08.bin
+  [FILE] \Device\Harddisk0\partition1\CACHE\LocalCache08.bin (disp 3 opts 0x68 from 0x0037B108) -> 0x00000000
+  [READ] from=0x0015B6AA ev=48000023 apc=00000000 @0 want=512 got=512 st=0x00000000  01 00 00 00
+  [PATH] \Device\CdRom0\Darkwatch.uix
+  [FILE] D:\Darkwatch.uix (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=20 got=20 st=0x00000000  58 53 4B 30
+  [READ] from=0x0015B6EF @seq want=420 got=420 st=0x00000000  01 00 00 00
+  [READ] from=0x0015B6EF @seq want=7464 got=7464 st=0x00000000  01 00 00 80
+  [READ] from=0x0015B6EF @seq want=232 got=232 st=0x00000000  01 00 00 80
+  [READ] from=0x0015B6EF @seq want=55648 got=55648 st=0x00000000  01 00 00 00
+  [READ] from=0x003666C5 ev=00000000 apc=00000000 @5632 want=512 got=0 st=0xC0000011  00 00 00 00
+  [CONTIG] t=3.8s alloc 0x80863000 600 KB: in use 9108 KB, peak 9108 KB, high-water 9188 KB (allocs=31 frees=0)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49514496 want=65536 got=65536 st=0x00000000  21 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109518848 want=65536 got=65536 st=0x00000000  2F 01 04 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109494272 want=65536 got=65536 st=0x00000000  52 75 6E 65
+[APU] interrupt delivered to 0x003ACC04 -> claimed
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109488128 want=65536 got=65536 st=0x00000000  0B 00 FF FF
+[APU] interrupt delivered to 0x003ACC04 -> claimed
+[APU] interrupt delivered to 0x003ACC04 -> claimed
+  [KERNEL] summary: 765952 total calls, latest ordinal 145 (slot 78) esp=0x007BFF9C
+  [KERNEL]   ordinal 277 x379133
+  [KERNEL]   ordinal 294 x379133
+  [KERNEL]   ordinal 184 x1868
+  [KERNEL]   ordinal 199 x778
+  [KERNEL]   ordinal 161 x724
+  [KERNEL]   ordinal 160 x700
+  [KERNEL] PsCreateSystemThreadEx #2: routine=0x0015C42B ctx1=0x002EE360 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE360, stack top 0x01D12FF0)
+  [KERNEL] PsCreateSystemThreadEx #3: routine=0x0015C42B ctx1=0x002EE3E0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE3E0, stack top 0x01D92FF0)
+  [KERNEL] PsCreateSystemThreadEx #4: routine=0x0015C42B ctx1=0x002EDFF0 ctx2=0x00000000
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EDFF0, stack top 0x01E12FF0)
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS] enters=379240 leaves=379239 (outstanding 1)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [CS] thread 29636 acquired 0x00505CC0
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] summary: 766976 total calls, latest ordinal 294 (slot 51) esp=0x00F7D7B8
+  [KERNEL]   ordinal 277 x379249
+  [KERNEL]   ordinal 294 x379249
+  [KERNEL]   ordinal 184 x1869
+  [KERNEL]   ordinal 119 x801
+  [KERNEL]   ordinal 145 x796
+  [KERNEL]   ordinal 199 x778
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=379403 leaves=379401 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [KERNEL] KeWait enter (title event 0x003566BC, state 0) caller 0x003566BC
+  [CS] thread 29636 acquired 0x00505CC0
+  [CS] thread 33428 waiting on guest lock 0x00505CC0 (held by thread 29636)
+  [CS]   holder thread 29636 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=379432 leaves=379430 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47E7
+  [CS]     guest 0x00307865
+  [CS]     guest 0x00307CF6
+  [CS]     guest 0x005F6D8C
+  [CS]     guest 0x00307D7A
+  [CS]     guest 0x005F6D8C
+  [CS]     guest 0x00307E19
+  [CS]     guest 0x005F6D8C
+  [CS] thread 33428 acquired 0x00505CC0
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [KERNEL] KeWait(title event 0x003566BC, timeout none) -> 0x0
+  [BRIDGE] NtCreateEvent: handle_ptr=0x01D92B14 type=0 init=0 → status=0x00000000 handle=0x00000F30
+  [PATH] \Device\CdRom0\movies2.pck
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [FILE] D:\movies2.pck (disp 1 opts 0x848 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6AA ev=48000026 apc=00000000 @241014784 want=497664 got=497664 st=0x00000000  00 00 01 BA
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=379517 leaves=379514 (outstanding 3)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [CS] thread 29636 acquired 0x00505CC0
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 33428)
+  [CS] enters=379536 leaves=379534 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F6379
+  [CS]     guest 0x004F7CA0
+  [CS]     guest 0x002F6492
+  [CS]     guest 0x004F7CA0
+  [CS]     guest 0x004C3620
+  [CS]     guest 0x002FA000
+  [CS]     guest 0x002F6595
+  [CS] thread 29636 acquired 0x00505CC0
+  [CS] thread 33428 waiting on guest lock 0x00505CC0 (held by thread 29636)
+  [CS]   holder thread 29636 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=379543 leaves=379541 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x0030B33B
+  [CS]     guest 0x00304307
+  [CS]     guest 0x003061D6
+  [CS]     guest 0x0030E786
+  [CS]     guest 0x003099A8
+  [CS]     guest 0x0030A287
+  [CS]     guest 0x0030AC90
+  [CS] thread 33428 acquired 0x00505CC0
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 2)
+  [CS] enters=379568 leaves=379565 (outstanding 3)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [CS] thread 29636 acquired 0x00505CC0
+  [KERNEL] NtSuspendThread(token 0x48000025 -> 0000000000000F28) caller 0x0015C2EF
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS] thread 19608 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=381340 leaves=381336 (outstanding 4)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=381341 leaves=381339 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x0030B33B
+  [CS]     guest 0x00304E6B
+  [CS]     guest 0x0030E7CB
+  [CS]     guest 0x0030DE9B
+  [CS]     guest 0x00302A73
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [CS] thread 29636 acquired 0x00505CC0
+  [CS]     guest 0x0030E7CB
+  [CS] thread 33428 waiting on guest lock 0x00505CC0 (held by thread 29636)
+  [CS] enters=381389 leaves=381387 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F6FE7
+  [CS]     guest 0x004F2B60
+  [CS]     guest 0x0030DC57
+  [CS]     guest 0x004F2B60
+  [CS]     guest 0x004F2B60
+  [CS]     guest 0x0030E223
+  [CS]     guest 0x0030E6A6
+  [CS] thread 33428 acquired 0x00505CC0
+  [CS]     guest 0x0030A1B2
+  [CS] thread 19608 acquired 0x00505CC0
+  [CS] thread 33428 waiting on guest lock 0x00505CC0 (held by thread 19608)
+  [CS]   holder thread 19608 took it at guest 0x002EDF2B (depth 1)
+  [CS] enters=381456 leaves=381454 (outstanding 2)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F6FE7
+  [CS]     guest 0x004F2B60
+  [CS]     guest 0x0030DC57
+  [CS]     guest 0x004F2B60
+  [CS]     guest 0x004F2B60
+  [CS]     guest 0x0030E223
+  [CS]     guest 0x0030E6A6
+  [CS] thread 33428 acquired 0x00505CC0
+  [CONTIG] t=13.3s alloc 0x80979000 2052 KB: in use 11692 KB, peak 11692 KB, high-water 11752 KB (allocs=39 frees=0)
+  [READ] from=0x0015B6AA ev=48000026 apc=00000000 @241512448 want=364544 got=364544 st=0x00000000  00 00 01 BA
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 2)
+  [CS] enters=381608 leaves=381604 (outstanding 4)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [CS] thread 19608 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 2)
+  [CS] enters=381635 leaves=381631 (outstanding 4)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x0030B33B
+  [CS]     guest 0x00304E6B
+  [CS]     guest 0x0030E7CB
+  [CS]     guest 0x0030DE9B
+  [CS]     guest 0x00302A73
+  [CS]     guest 0x0030E7CB
+  [CS]     guest 0x0030A1B2
+  [CS] thread 19608 acquired 0x00505CC0
+  [CS] thread 29636 acquired 0x00505CC0
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 2)
+  [CS] enters=381761 leaves=381758 (outstanding 3)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F9FC5
+  [CS]     guest 0x002F6595
+  [CS]     guest 0x002F4907
+  [CS]     guest 0x002F4957
+  [CS]     guest 0x002EE3FF
+  [CS]     guest 0x0015C49D
+  [CS]     guest 0x0024D33C
+  [CS] thread 29636 acquired 0x00505CC0
+  [CS] thread 33428 waiting on guest lock 0x00505CC0 (held by thread 29636)
+  [CS] enters=381830 leaves=381829 (outstanding 1)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F6FE7
+  [CS]     guest 0x004F2CE0
+  [CS]     guest 0x0030DC57
+  [CS]     guest 0x004F2CE0
+  [CS]     guest 0x004F2CE0
+  [CS]     guest 0x0030E223
+  [CS]     guest 0x0030DFA5
+  [CS] thread 33428 acquired 0x00505CC0
+  [CS] thread 29636 waiting on guest lock 0x00505CC0 (held by thread 32064)
+  [CS]   holder thread 32064 took it at guest 0x002EDF2B (depth 2)
+  [CS] enters=382011 leaves=382006 (outstanding 5)
+  [CS]     guest 0x00505CC0
+  [CS]     guest 0x002F4792
+  [CS]     guest 0x002F47C7
+  [CS]     guest 0x002F6379
+  [CS]     guest 0x004F7D60
+  [CS]     guest 0x002F6492
+  [CS]     guest 0x004F7D60
+  [CS]     guest 0x004C3620
+  [CS]     guest 0x002FA000
+  [CS]     guest 0x002F6595
+  [CONTIG] t=13.5s free 0x80979000 2052 KB: in use 9640 KB, peak 11692 KB, high-water 11752 KB (allocs=39 frees=1)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000023 handle=0000000000000F18 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000024 handle=0000000000000F1C timeout=finite
+[VK] interp 10s: 1984 shown (20 replayed, 20 of them blended, 1964 as drawn); frame interval 19.6 ms; draws paired 20 (0 by the camera), moved with the camera 0, of 42; camera fitted in 0 of 8 frames; 0 cuts; refused 0 pairs and 0 camera moves by their vertices; replay vs drawn 0.000/255 (0 checks); recording 0.00 ms a frame; present call 0.08 ms avg, 1.35 max
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000025 handle=0000000000000F28 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] PsCreateSystemThreadEx #5: routine=0x0015C42B ctx1=0x002EE360 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE360, stack top 0x020E8FF0)
+  [KERNEL] PsCreateSystemThreadEx #6: routine=0x0015C42B ctx1=0x002EE3E0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE3E0, stack top 0x02168FF0)
+  [KERNEL] PsCreateSystemThreadEx #7: routine=0x0015C42B ctx1=0x002EDFF0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EDFF0, stack top 0x021E8FF0)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @131072 want=65536 got=65536 st=0x00000000  FF FF 18 C6
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @69959680 want=2048 got=2048 st=0x00000000  57 42 4E 44
+[DW] socket poll after the intro: reporting no network traffic (WAIT_TIMEOUT)
+  [PATH] \Device\CdRom0\audioWpn.pck
+  [FILE] D:\audioWpn.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\Partition5\audioWpn.pck
+  [FILE] Z:\audioWpn.pck (disp 3 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\Partition5\audioWpn.pck
+  [FILE] Z:\audioWpn.pck (disp 3 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 2
+  [FILE] U:\005300520052\Profile 2 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 3
+  [FILE] U:\005300520052\Profile 3 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 4
+  [FILE] U:\005300520052\Profile 4 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 5
+  [FILE] U:\005300520052\Profile 5 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 6
+  [FILE] U:\005300520052\Profile 6 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 7
+  [FILE] U:\005300520052\Profile 7 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 8
+  [FILE] U:\005300520052\Profile 8 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 9
+  [FILE] U:\005300520052\Profile 9 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 10
+  [FILE] U:\005300520052\Profile 10 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @0 want=65536 got=65536 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @65536 want=65536 got=65536 st=0x00000000  35 B8 8D 0B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @131072 want=65536 got=65536 st=0x00000000  81 10 F9 BD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @196608 want=65536 got=65536 st=0x00000000  0A 90 20 11
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @262144 want=65536 got=65536 st=0x00000000  10 02 40 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @327680 want=65536 got=65536 st=0x00000000  6B A3 3B C2
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @393216 want=65536 got=65536 st=0x00000000  3B A0 DA 64
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @458752 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @524288 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @589824 want=65536 got=65536 st=0x00000000  A0 82 A9 10
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @655360 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [GPU] draw #200
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @720896 want=65536 got=65536 st=0x00000000  82 BA 8D 43
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @786432 want=65536 got=65536 st=0x00000000  AA 08 43 42
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @851968 want=65536 got=65536 st=0x00000000  26 02 22 00
+[DW] lagged kick waits: 64, 424.0 ms in all (6625 us each)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @917504 want=65536 got=65536 st=0x00000000  BB BA BA CB
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @983040 want=65536 got=65536 st=0x00000000  00 1B 01 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1048576 want=65536 got=65536 st=0x00000000  C1 FD 86 FE
+[VK] last 60 frames: 171.4 ms/frame wall; per frame draw-record 4.04 ms, texture decode 0.01 ms, checksum 0.02 ms (1 binds reused one), submit+wait+writeback 3.89 ms (293 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.73 ms, copy back to guest memory 0.13 ms
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1114112 want=65536 got=65536 st=0x00000000  45 01 08 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1179648 want=65536 got=65536 st=0x00000000  44 43 23 23
+[APU] 10s: 15080 VP frames (1508/s), 3 frames front-end-trapped, 3 traps, ISR delivered 243 (3 on a guest thread) / held off 6 (longest 5), MMIO 1271 reads 7437 writes, underruns 0
+[APU]   voices: 7 on, 0 release, 3 off (method) 0 off (VP); idle-voice signals 3 (3 trapped, 0 waiting behind a trap); per frame 4.0 active, 0.0 idle in the lists; FETFORCE1=00008000 FECTL=00001F0F IEN=000000D9
+[APU]   SECTL writes: 238 with the sequencer off, 236 on (last 0000000F; callers 011A5000 003B25BB 011A5000 011A5000)
+[APU]   sequencer-off gaps waited out instead of rendered: 0 frames
+[APU]   dropouts: 0 silent periods right after sound (0 with <8 VP frames, 0 with a trapped front end, 0 lightweight, 0 with all 8 frames run)
+[APU]   bins (% of energy): 2:19.2 3:56.2 4:10.8 5:13.7; output samples clipped 0
+[APU]   output: limiter engaged 0 times; 0 of 0 sound blocks repeat one played earlier
+[APU]   two audible voices on one buffer in 1876 samples (pairs within 1 ms: 11256, 1-50 ms: 0, further apart: 0); bins@apart 7F000000+00FF0000@0 7F000000+0000FF00@0
+[APU]   clicks: output 0 at a VP frame start, 0 elsewhere; voice jumps at frame starts 0 in 60051 voice-frames
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1245184 want=65536 got=65536 st=0x00000000  23 02 80 CB
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1310720 want=65536 got=65536 st=0x00000000  63 44 23 91
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1376256 want=65536 got=65536 st=0x00000000  E8 10 9A C8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1441792 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1507328 want=65536 got=65536 st=0x00000000  AC 08 01 31
+  [GPU] draw #400
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1572864 want=65536 got=65536 st=0x00000000  CC BC AB A9
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1638400 want=65536 got=65536 st=0x00000000  00 01 01 41
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1703936 want=65536 got=65536 st=0x00000000  CA BD BC 09
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1769472 want=65536 got=65536 st=0x00000000  AB 08 40 47
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1835008 want=65536 got=65536 st=0x00000000  CB BA 8A 20
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1900544 want=65536 got=65536 st=0x00000000  DB 10 B8 9B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1966080 want=65536 got=65536 st=0x00000000  43 43 32 12
+[DW] lagged kick waits: 128, 621.9 ms in all (4859 us each)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2031616 want=65536 got=65536 st=0x00000000  CA CA BA AC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2097152 want=65536 got=65536 st=0x00000000  89 19 22 34
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2162688 want=65536 got=65536 st=0x00000000  8A 07 1E 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2228224 want=65536 got=65536 st=0x00000000  CA AC 43 C1
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2293760 want=65536 got=65536 st=0x00000000  B5 28 4A 50
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2359296 want=65536 got=65536 st=0x00000000  0E 00 49 03
+[VK] last 60 frames: 5.1 ms/frame wall; per frame draw-record 0.02 ms, texture decode 0.00 ms, checksum 0.02 ms (1 binds reused one), submit+wait+writeback 4.31 ms (593 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 4.16 ms, copy back to guest memory 0.13 ms
+  [GPU] draw #600
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2424832 want=65536 got=65536 st=0x00000000  29 22 12 C9
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2490368 want=65536 got=65536 st=0x00000000  B8 9A 02 08
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2555904 want=65536 got=65536 st=0x00000000  11 42 43 12
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2621440 want=40960 got=39789 st=0x00000000  27 90 BB 20
+  [PATH] \Device\Harddisk0\Partition5\audioWpn.pck
+  [FILE] Z:\audioWpn.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\Partition5\audioWpn.pck
+  [PATH] \Device\Harddisk0\Partition5\audioWpn.pck
+  [FILE] Z:\audioWpn.pck (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\Partition5\audioWpn.pck
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2660352 want=65536 got=877 st=0x00000000  CD 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @2658304 want=65536 got=2925 st=0x00000000  75 72 63 65
+  [GPU] draw #800
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.02 ms, texture decode 0.00 ms, checksum 0.02 ms (1 binds reused one), submit+wait+writeback 4.48 ms (893 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 4.34 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.02 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.00; 5 batches a frame
+[DW] lagged kick waits: 256, 1041.3 ms in all (4068 us each)
+  [GPU] draw #1000
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @69961728 want=96256 got=96256 st=0x00000000  24 00 FE FF
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @70057984 want=2048 got=2048 st=0x00000000  00 00 00 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [FILE] U:\005300520052\Profile 1 (disp 1 opts 0x48 from 0x0015BCC8) -> 0x00000000
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 1
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @0 want=65536 got=4385 st=0x00000000  46 4F 52 50
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 2
+  [FILE] U:\005300520052\Profile 2 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 3
+  [FILE] U:\005300520052\Profile 3 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 4
+  [FILE] U:\005300520052\Profile 4 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 5
+  [FILE] U:\005300520052\Profile 5 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 6
+  [FILE] U:\005300520052\Profile 6 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 7
+  [FILE] U:\005300520052\Profile 7 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 8
+  [FILE] U:\005300520052\Profile 8 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 9
+  [FILE] U:\005300520052\Profile 9 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\SaveMeta.xbx
+  [FILE] U:\005300520052\SaveMeta.xbx (disp 1 opts 0x60 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6EF @seq want=2 got=2 st=0x00000000  FF FE 00 00
+  [READ] from=0x0015B6EF @seq want=280 got=40 st=0x00000000  4E 00 61 00
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\Profile 10
+  [FILE] U:\005300520052\Profile 10 (disp 1) -> 0xC0000034 FAILED (win32 err=2 ERROR_FILE_NOT_FOUND)
+  [PATH] \Device\Harddisk0\partition1\UDATA\43430016\005300520052\
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000023 handle=0000000000000B7C timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000024 handle=0000000000000BA0 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000025 handle=00000000000008B0 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [READ] from=0x003666C5 ev=00000000 apc=00000000 @5632 want=512 got=0 st=0xC0000011  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103272448 want=65536 got=65536 st=0x00000000  7E 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103337984 want=143360 got=143360 st=0x00000000  00 00 01 00
+[VK] last 60 frames: 5.7 ms/frame wall; per frame draw-record 0.24 ms, texture decode 0.00 ms, checksum 0.02 ms (0 binds reused one), submit+wait+writeback 4.42 ms (1179 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 4.28 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.02 ms, surface 0.00, vertex copy 0.00, pipeline 0.21, descriptors 0.00, commands 0.00; 4 batches a frame
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103649280 want=65536 got=65536 st=0x00000000  79 20 73 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @100161536 want=65536 got=65536 st=0x00000000  00 00 E5 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @100227072 want=2799616 got=2799616 st=0x00000000  11 0D 68 82
+  [CONTIG] t=14.7s alloc 0x80B39000 256 KB: in use 11688 KB, peak 11692 KB, high-water 11752 KB (allocs=47 frees=1)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @0 want=196608 got=196608 st=0x00000000  41 75 64 69
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @126976 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @155648 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @128120832 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [GPU] draw #1200
+  [KERNEL] PsCreateSystemThreadEx #8: routine=0x0015C42B ctx1=0x002EE360 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE360, stack top 0x02218FF0)
+  [KERNEL] PsCreateSystemThreadEx #9: routine=0x0015C42B ctx1=0x002EE3E0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE3E0, stack top 0x020E8FF0)
+  [KERNEL] PsCreateSystemThreadEx #10: routine=0x0015C42B ctx1=0x002EDFF0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EDFF0, stack top 0x02168FF0)
+  [BRIDGE] NtCreateEvent: handle_ptr=0x020E8B14 type=0 init=0 → status=0x00000000 handle=0x00000F2C
+  [PATH] \Device\CdRom0\movies2.pck
+  [FILE] D:\movies2.pck (disp 1 opts 0x848 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @203698176 want=497664 got=497664 st=0x00000000  00 00 01 BA
+  [CONTIG] t=14.8s alloc 0x80C39000 2052 KB: in use 14508 KB, peak 14508 KB, high-water 14568 KB (allocs=51 frees=1)
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204195840 want=368640 got=368640 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204564480 want=112640 got=112640 st=0x00000000  00 00 01 BA
+  [GPU] draw #1400
+  [KERNEL] KeQuerySystemTime: 105500 calls in this interval; busiest callers: 003AEB46 x105495 003AF943 x3 003EBBA8 x1 003EBAFF x1; 411 naps so far; 100% on the main thread, 0% with IRQL raised somewhere
+  [KERNEL]   DirectSound voice checks: 2 distinct voices (2 start-pending, oldest pending 5 ms, 0 checks past the 0.5 s give-up); state bits set: 0:2 8:2 15:2
+  [KERNEL]   a sampled frame chain: 003AF7AE
+  [KERNEL] summary: 998400 total calls, latest ordinal 294 (slot 51) esp=0x02168CC8
+  [KERNEL]   ordinal 294 x430385
+  [KERNEL]   ordinal 277 x430381
+  [KERNEL]   ordinal 128 x105505
+  [KERNEL]   ordinal  99 x17894
+  [KERNEL]   ordinal 161 x2572
+  [KERNEL]   ordinal 160 x2539
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204677120 want=18432 got=18432 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204695552 want=196608 got=196608 st=0x00000000  00 00 01 BA
+  [GPU] draw #1600
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204892160 want=100352 got=100352 st=0x00000000  00 00 01 BA
+  [GPU] draw #1800
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204992512 want=200704 got=200704 st=0x00000000  00 00 01 BA
+[VK] last 60 frames: 18.3 ms/frame wall; per frame draw-record 0.17 ms, texture decode 0.08 ms, checksum 0.03 ms (6 binds reused one), submit+wait+writeback 3.16 ms (1964 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.01 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.16 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 13 batches a frame
+[VK] frame 300: 1964 draws (0 fogged), 19056 triangles, 40 texture uploads, 300 submissions so far; 3x surfaces: 298 reloads skipped, 2 done
+  [GPU] draw #2000
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205193216 want=102400 got=102400 st=0x00000000  00 00 01 BA
+  [GPU] draw #2200
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205295616 want=215040 got=215040 st=0x00000000  00 00 01 BA
+  [GPU] draw #2400
+  [GPU] draw #2600
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205510656 want=106496 got=106496 st=0x00000000  00 00 01 BA
+  [GPU] draw #2800
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205617152 want=73728 got=73728 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205690880 want=131072 got=131072 st=0x00000000  00 00 01 BA
+[VK] last 60 frames: 16.8 ms/frame wall; per frame draw-record 0.15 ms, texture decode 0.08 ms, checksum 0.03 ms (7 binds reused one), submit+wait+writeback 3.13 ms (2854 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.98 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.14 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 14 batches a frame
+  [GPU] draw #3000
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205821952 want=102400 got=102400 st=0x00000000  00 00 01 BA
+  [KERNEL] summary: 1085440 total calls, latest ordinal 294 (slot 51) esp=0x02168CA0
+  [KERNEL]   ordinal 294 x465594
+  [KERNEL]   ordinal 277 x465585
+  [KERNEL]   ordinal 128 x105554
+  [KERNEL]   ordinal  99 x26894
+  [KERNEL]   ordinal 161 x5715
+  [KERNEL]   ordinal 160 x5680
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @205924352 want=210944 got=210944 st=0x00000000  00 00 01 BA
+  [GPU] draw #3200
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206135296 want=53248 got=53248 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206188544 want=106496 got=106496 st=0x00000000  00 00 01 BA
+  [GPU] draw #3400
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206295040 want=149504 got=149504 st=0x00000000  00 00 01 BA
+[VK] last 60 frames: 16.5 ms/frame wall; per frame draw-record 0.15 ms, texture decode 0.08 ms, checksum 0.03 ms (5 binds reused one), submit+wait+writeback 2.82 ms (3478 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.67 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.14 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 10 batches a frame
+  [GPU] draw #3600
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206444544 want=100352 got=100352 st=0x00000000  00 00 01 BA
+[DW] lagged kick waits: 512, 1589.1 ms in all (3104 us each)
+  [GPU] draw #3800
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206544896 want=141312 got=141312 st=0x00000000  00 00 01 BA
+  [GPU] draw #4000
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206686208 want=149504 got=149504 st=0x00000000  00 00 01 BA
+  [GPU] draw #4200
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206835712 want=104448 got=104448 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @206940160 want=126976 got=126976 st=0x00000000  00 00 01 BA
+  [GPU] draw #4400
+[VK] last 60 frames: 16.7 ms/frame wall; per frame draw-record 0.19 ms, texture decode 0.09 ms, checksum 0.04 ms (5 binds reused one), submit+wait+writeback 2.89 ms (4413 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.74 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.18 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 15 batches a frame
+  [GPU] draw #4600
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @207067136 want=102400 got=102400 st=0x00000000  00 00 01 BA
+  [GPU] draw #4800
+  [KERNEL] summary: 1176576 total calls, latest ordinal 277 (slot 52) esp=0x02168D80
+  [KERNEL]   ordinal 294 x501939
+  [KERNEL]   ordinal 277 x501929
+  [KERNEL]   ordinal 128 x105640
+  [KERNEL]   ordinal  99 x35894
+  [KERNEL]   ordinal 161 x9719
+  [KERNEL]   ordinal 160 x9682
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @207169536 want=14336 got=14336 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @207183872 want=192512 got=192512 st=0x00000000  00 00 01 BA
+  [GPU] draw #5000
+  [GPU] draw #5200
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @207376384 want=112640 got=112640 st=0x00000000  00 00 01 BA
+  [GPU] draw #5400
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @207489024 want=192512 got=192512 st=0x00000000  00 00 01 BA
+[APU] DSP doorbell (auto): command 0x00000002 acknowledged
+[VK] last 60 frames: 16.8 ms/frame wall; per frame draw-record 0.19 ms, texture decode 0.08 ms, checksum 0.05 ms (7 binds reused one), submit+wait+writeback 2.93 ms (5474 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.78 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.17 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 17 batches a frame
+  [CONTIG] t=19.8s free 0x80C39000 2052 KB: in use 12456 KB, peak 14508 KB, high-water 14568 KB (allocs=51 frees=2)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000023 handle=0000000000000D74 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000024 handle=0000000000000F28 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000025 handle=0000000000000F14 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [CONTIG] t=19.9s free 0x80A39000 256 KB: in use 10408 KB, peak 14508 KB, high-water 14568 KB (allocs=51 frees=10)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103272448 want=65536 got=65536 st=0x00000000  7E 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103337984 want=143360 got=143360 st=0x00000000  00 00 01 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103268352 want=65536 got=65536 st=0x00000000  00 01 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @92971008 want=65536 got=65536 st=0x00000000  01 59 00 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109395968 want=65536 got=65536 st=0x00000000  0C 05 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103763968 want=65536 got=65536 st=0x00000000  2F 03 05 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18087936 want=65536 got=65536 st=0x00000000  01 00 02 85
+  [KERNEL] PsCreateSystemThreadEx #11: routine=0x0015C42B ctx1=0x002EE360 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE360, stack top 0x020E8FF0)
+  [KERNEL] PsCreateSystemThreadEx #12: routine=0x0015C42B ctx1=0x002EE3E0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EE3E0, stack top 0x02168FF0)
+  [KERNEL] PsCreateSystemThreadEx #13: routine=0x0015C42B ctx1=0x002EDFF0 ctx2=0x00000000
+  [KERNEL] PsCreateSystemThreadEx: spawned worker 0x0015C42B (ctx=0x002EDFF0, stack top 0x021E8FF0)
+  [BRIDGE] NtCreateEvent: handle_ptr=0x02168B14 type=0 init=0 → status=0x00000000 handle=0x00000F3C
+  [PATH] \Device\CdRom0\movies3.pck
+  [FILE] D:\movies3.pck (disp 1 opts 0x848 from 0x0015BCC8) -> 0x00000000
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @203403264 want=497664 got=497664 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @203900928 want=296960 got=296960 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204197888 want=110592 got=110592 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204308480 want=92160 got=92160 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204400640 want=120832 got=120832 st=0x00000000  00 00 01 BA
+  [HEAP] frees=512 matched=512 blocks=281 high-water 21416 KB of 115200 KB (live 17282 KB, holes 4113 KB, largest hole 2048 KB)
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204521472 want=106496 got=106496 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204627968 want=100352 got=100352 st=0x00000000  00 00 01 BA
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204728320 want=108544 got=108544 st=0x00000000  00 00 01 BA
+[VK] last 60 frames: 20.3 ms/frame wall; per frame draw-record 0.12 ms, texture decode 0.08 ms, checksum 0.01 ms (0 binds reused one), submit+wait+writeback 2.62 ms (5533 draws total)
+[VK]   flush split per frame: submit 0.02 ms, GPU wait 2.46 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.12 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.00; 0 batches a frame
+[VK] frame 600: 5533 draws (0 fogged), 64300 triangles, 199 texture uploads, 600 submissions so far; 3x surfaces: 598 reloads skipped, 2 done
+  [READ] from=0x0015B6AA ev=48000027 apc=00000000 @204836864 want=61440 got=61440 st=0x00000000  00 00 01 BA
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000023 handle=0000000000000F14 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000024 handle=0000000000000F28 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [KERNEL] NtWaitForSingleObjectEx: token=0x48000025 handle=0000000000000F44 timeout=finite
+  [KERNEL] PsTerminateSystemThread: status=0x00000000 (worker)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109484032 want=65536 got=65536 st=0x00000000  21 00 22 00
+  [KERNEL] KeQuerySystemTime: 241584 calls in this interval; busiest callers: 003AEB46 x241542 003EBBA8 x15 003AF943 x12 003EBC70 x9; 1352 naps so far; 99% on the main thread, 1% with IRQL raised somewhere
+  [KERNEL]   DirectSound voice checks: 11 distinct voices (10 start-pending, oldest pending 5 ms, 0 checks past the 0.5 s give-up); state bits set: 0:11 8:11 15:10
+  [KERNEL]   a sampled frame chain: 003AF7AE
+  [KERNEL] summary: 1593344 total calls, latest ordinal 294 (slot 51) esp=0x00F7D6B0
+  [KERNEL]   ordinal 294 x575359
+  [KERNEL]   ordinal 277 x575339
+  [KERNEL]   ordinal 128 x347224
+  [KERNEL]   ordinal  99 x38446
+  [KERNEL]   ordinal 161 x12053
+  [KERNEL]   ordinal 160 x12014
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25071616 want=1048576 got=1048576 st=0x00000000  4C 65 76 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26120192 want=1048576 got=1048576 st=0x00000000  80 28 89 43
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @27168768 want=1048576 got=1048576 st=0x00000000  4D A0 19 03
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @28217344 want=1048576 got=1048576 st=0x00000000  13 F5 03 1D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29265920 want=1048576 got=1048576 st=0x00000000  23 01 C9 88
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @30314496 want=1048576 got=1048576 st=0x00000000  8B A3 D0 33
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @31363072 want=393216 got=393216 st=0x00000000  90 59 83 99
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @126777344 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @128120832 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @71563264 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @93691904 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @4052992 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @132667392 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @76750848 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @70062080 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @2400256 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @352256 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @931840 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @5425152 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @126976 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @155648 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @126976 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @155648 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @89659392 want=2048 got=2048 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @71565312 want=36864 got=36864 st=0x00000000  0C 00 00 00
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @71888896 want=36864 got=36864 st=0x00000000  2B 00 00 00
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @70064128 want=36864 got=36864 st=0x00000000  D7 01 00 00
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @931840 want=38912 got=38912 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @5425152 want=8192 got=8192 st=0x00000000  57 42 4E 44
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @199124992 want=65536 got=65536 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16852992 want=65536 got=65536 st=0x00000000  75 61 04 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16918528 want=65536 got=65536 st=0x00000000  38 C6 F3 9C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16984064 want=65536 got=65536 st=0x00000000  FE FF 49 92
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16883712 want=65536 got=65536 st=0x00000000  42 DE FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16877568 want=65536 got=65536 st=0x00000000  01 00 00 FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16859136 want=65536 got=65536 st=0x00000000  42 40 AE 87
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17041408 want=65536 got=65536 st=0x00000000  FF FF 03 18
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93138944 want=65536 got=65536 st=0x00000000  00 00 00 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18073600 want=65536 got=65536 st=0x00000000  00 00 46 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17051648 want=65536 got=65536 st=0x00000000  01 00 14 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93093888 want=65536 got=65536 st=0x00000000  2B 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18073600 want=65536 got=65536 st=0x00000000  00 00 46 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93159424 want=65536 got=65536 st=0x00000000  41 01 00 04
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93097984 want=65536 got=65536 st=0x00000000  03 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93179904 want=65536 got=65536 st=0x00000000  99 00 01 02
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93050880 want=65536 got=65536 st=0x00000000  28 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18065408 want=65536 got=65536 st=0x00000000  65 5F 50 6C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93179904 want=65536 got=65536 st=0x00000000  99 00 01 02
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93093888 want=65536 got=65536 st=0x00000000  2B 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93186048 want=65536 got=65536 st=0x00000000  09 BF 7D 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17047552 want=65536 got=65536 st=0x00000000  33 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @92995584 want=65536 got=65536 st=0x00000000  00 00 5F 41
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18071552 want=65536 got=65536 st=0x00000000  04 10 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17049600 want=65536 got=65536 st=0x00000000  15 00 69 6E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18071552 want=65536 got=65536 st=0x00000000  04 10 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18067456 want=65536 got=65536 st=0x00000000  72 73 65 5F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93136896 want=65536 got=65536 st=0x00000000  72 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49815552 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48891904 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48855040 want=65536 got=65536 st=0x00000000  00 00 00 21
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49768448 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @48517120 want=65536 got=65536 st=0x00000000  00 00 00 21
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49643520 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49641472 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49332224 want=65536 got=65536 st=0x00000000  3C 10 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @49700864 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109490176 want=65536 got=65536 st=0x00000000  43 11 00 4C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25114624 want=65536 got=65536 st=0x00000000  6E 61 6C 6F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25112576 want=65536 got=65536 st=0x00000000  4F B7 EA BE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109402112 want=65536 got=65536 st=0x00000000  FF FF 94 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @107608064 want=65536 got=65536 st=0x00000000  AA 00 BB 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @35366912 want=65536 got=65536 st=0x00000000  2F BE 14 E9
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17588224 want=65536 got=65536 st=0x00000000  74 79 70 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @44926976 want=65536 got=65536 st=0x00000000  22 70 69 76
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17670144 want=65536 got=65536 st=0x00000000  65 3D 22 68
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @28209152 want=65536 got=65536 st=0x00000000  27 00 3B 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26046464 want=65536 got=65536 st=0x00000000  19 00 1A 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26044416 want=65536 got=65536 st=0x00000000  1C 0C DA B2
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16588800 want=65536 got=65536 st=0x00000000  C3 75 FB AA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26042368 want=65536 got=65536 st=0x00000000  DF 05 FB 3E
+  [GPU] draw #5600
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @27121664 want=374784 got=374784 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47951872 want=65536 got=65536 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @27115520 want=65536 got=65536 st=0x00000000  2E 74 72 61
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @5072896 want=65536 got=65536 st=0x00000000  3D 22 68 6B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4552704 want=65536 got=65536 st=0x00000000  6E 6F 47 72
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4642816 want=354304 got=354304 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4638720 want=65536 got=65536 st=0x00000000  6E 52 65 73
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4995072 want=65536 got=65536 st=0x00000000  F3 04 35 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4640768 want=65536 got=65536 st=0x00000000  30 37 39 34
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34885632 want=65536 got=65536 st=0x00000000  04 00 26 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34533376 want=65536 got=65536 st=0x00000000  0E 00 0F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34531328 want=65536 got=65536 st=0x00000000  B5 1F C6 4E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34525184 want=65536 got=65536 st=0x00000000  34 00 1A 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34523136 want=65536 got=65536 st=0x00000000  33 3F 61 22
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34410496 want=65536 got=65536 st=0x00000000  2E 30 30 30
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34408448 want=65536 got=65536 st=0x00000000  00 40 E8 8C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34306048 want=65536 got=65536 st=0x00000000  61 72 74 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34304000 want=65536 got=65536 st=0x00000000  00 00 00 2C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34473984 want=65536 got=65536 st=0x00000000  3A 01 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34457600 want=65536 got=65536 st=0x00000000  00 0B 73 91
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34455552 want=65536 got=65536 st=0x00000000  D4 87 3F D0
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34439168 want=65536 got=65536 st=0x00000000  6E 64 42 61
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34437120 want=65536 got=65536 st=0x00000000  00 EE FD 37
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34613248 want=65536 got=65536 st=0x00000000  00 06 00 1C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34611200 want=65536 got=65536 st=0x00000000  00 00 00 2F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34383872 want=65536 got=65536 st=0x00000000  12 3F F5 5E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34621440 want=65536 got=65536 st=0x00000000  16 59 3F F2
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34615296 want=65536 got=65536 st=0x00000000  FF FF FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34342912 want=65536 got=65536 st=0x00000000  D7 23 A2 8F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34516992 want=65536 got=65536 st=0x00000000  86 27 BC 0C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34396160 want=65536 got=65536 st=0x00000000  3F A3 E1 DE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @108582912 want=65536 got=65536 st=0x00000000  01 FF 12 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34893824 want=475136 got=475136 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34883584 want=65536 got=65536 st=0x00000000  D2 A5 75 E7
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @35373056 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @57556992 want=65536 got=65536 st=0x00000000  65 72 74 0E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17090560 want=65536 got=65536 st=0x00000000  00 00 FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93026304 want=65536 got=65536 st=0x00000000  44 69 72 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93018112 want=65536 got=65536 st=0x00000000  5C 53 63 72
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @33419264 want=65536 got=65536 st=0x00000000  6D 20 6E 61
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32425984 want=65536 got=65536 st=0x00000000  59 34 8A BC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32278528 want=65536 got=65536 st=0x00000000  80 3F 3B DA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32268288 want=65536 got=65536 st=0x00000000  4F 49 43 45
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32266240 want=65536 got=65536 st=0x00000000  00 00 C1 3B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32485376 want=65536 got=65536 st=0x00000000  7D CA C5 3D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32473088 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32356352 want=65536 got=65536 st=0x00000000  00 06 00 17
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32354304 want=65536 got=65536 st=0x00000000  47 E1 25 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32675840 want=65536 got=65536 st=0x00000000  28 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32620544 want=65536 got=65536 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32071680 want=65536 got=65536 st=0x00000000  36 00 12 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32069632 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32399360 want=65536 got=65536 st=0x00000000  EE 83 3D 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32735232 want=651264 got=651264 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @33386496 want=65536 got=65536 st=0x00000000  3C 3F 78 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32729088 want=65536 got=65536 st=0x00000000  67 66 06 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @44980224 want=65536 got=65536 st=0x00000000  00 01 00 89
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32729088 want=65536 got=65536 st=0x00000000  67 66 06 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1867776 want=65536 got=65536 st=0x00000000  61 72 61 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18083840 want=65536 got=65536 st=0x00000000  05 C6 C2 02
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18079744 want=65536 got=65536 st=0x00000000  BF 01 03 45
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16852992 want=65536 got=65536 st=0x00000000  75 61 04 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18055168 want=65536 got=65536 st=0x00000000  04 7F 04 97
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17051648 want=65536 got=65536 st=0x00000000  01 00 14 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17565696 want=491520 got=491520 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @31137792 want=65536 got=65536 st=0x00000000  90 F3 CB 39
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @35375104 want=65536 got=65536 st=0x00000000  30 2E 30 19
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34570240 want=65536 got=65536 st=0x00000000  63 65 5F 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34568192 want=65536 got=65536 st=0x00000000  00 1C 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @31008768 want=126976 got=126976 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @31004672 want=65536 got=65536 st=0x00000000  73 61 6D 70
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @28205056 want=65536 got=65536 st=0x00000000  47 4A 00 4C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26392576 want=65536 got=65536 st=0x00000000  A6 BD C0 DC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26378240 want=65536 got=65536 st=0x00000000  80 3F 40 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26165248 want=65536 got=65536 st=0x00000000  80 3F 2E F2
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26161152 want=65536 got=65536 st=0x00000000  00 00 09 C8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26157056 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26155008 want=65536 got=65536 st=0x00000000  28 7C 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26486784 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34215936 want=88064 got=88064 st=0x00000000  01 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26494976 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26441728 want=65536 got=65536 st=0x00000000  72 A6 9E 0C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17602560 want=65536 got=65536 st=0x00000000  3C 3F 78 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29427712 want=399360 got=399360 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29880320 want=65536 got=65536 st=0x00000000  30 30 20 30
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29423616 want=65536 got=65536 st=0x00000000  04 00 05 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29874176 want=65536 got=65536 st=0x00000000  3D 04 FF 9F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29841408 want=65536 got=65536 st=0x00000000  32 20 30 2E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29835264 want=65536 got=65536 st=0x00000000  63 BE C0 03
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @29825024 want=65536 got=65536 st=0x00000000  B0 27 A3 5D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @8368128 want=65536 got=65536 st=0x00000000  FF 03 00 FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @778240 want=65536 got=65536 st=0x00000000  28 75 6E 6E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @90736640 want=65536 got=65536 st=0x00000000  03 18 01 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17088512 want=65536 got=65536 st=0x00000000  67 6C 65 50
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34666496 want=212992 got=212992 st=0x00000000  24 00 00 00
+  [CONTIG] t=21.5s alloc 0x80C36000 256 KB: in use 12664 KB, peak 14508 KB, high-water 14568 KB (allocs=66 frees=14)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18085888 want=65536 got=65536 st=0x00000000  61 6E 20 31
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @34662400 want=65536 got=65536 st=0x00000000  61 58 3F 85
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12851200 want=65536 got=65536 st=0x00000000  03 00 01 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12396544 want=65536 got=65536 st=0x00000000  47 01 23 AB
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12394496 want=65536 got=65536 st=0x00000000  55 75 3F 8D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12388352 want=65536 got=65536 st=0x00000000  42 39 BD 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12386304 want=65536 got=65536 st=0x00000000  00 00 01 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @15423488 want=65536 got=65536 st=0x00000000  3C 3F 78 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12441600 want=202752 got=202752 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12644352 want=65536 got=65536 st=0x00000000  80 3F C6 FA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @12439552 want=65536 got=65536 st=0x00000000  FF FF FF FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18057216 want=65536 got=65536 st=0x00000000  80 59 A6 BE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103041024 want=141312 got=141312 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103198720 want=71680 got=71680 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109402112 want=65536 got=65536 st=0x00000000  FF FF 94 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @92995584 want=65536 got=65536 st=0x00000000  00 00 5F 41
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @28203008 want=65536 got=65536 st=0x00000000  01 00 00 FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26806272 want=65536 got=65536 st=0x00000000  00 0D 82 94
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18659328 want=65536 got=65536 st=0x00000000  66 1D 16 EC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26247168 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26787840 want=65536 got=65536 st=0x00000000  08 00 7C 54
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26785792 want=65536 got=65536 st=0x00000000  29 5C 0F A7
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @26513408 want=65536 got=65536 st=0x00000000  80 B7 7F A7
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @15880192 want=65536 got=65536 st=0x00000000  3C 3F 78 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @27789312 want=354304 got=354304 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @28176384 want=65536 got=65536 st=0x00000000  72 61 6D 20
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17637376 want=65536 got=65536 st=0x00000000  3C 3F 78 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25128960 want=65536 got=65536 st=0x00000000  00 08 00 15
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23879680 want=65536 got=65536 st=0x00000000  3E 39 8E 63
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24102912 want=65536 got=65536 st=0x00000000  3B 6D FC 2B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24195072 want=65536 got=65536 st=0x00000000  FE A5 76 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24014848 want=65536 got=65536 st=0x00000000  3E 11 F5 AC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24197120 want=65536 got=65536 st=0x00000000  00 10 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23818240 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23797760 want=65536 got=65536 st=0x00000000  00 6E 61 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23795712 want=65536 got=65536 st=0x00000000  4F E0 94 5B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24252416 want=65536 got=65536 st=0x00000000  D2 3D A2 88
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23904256 want=65536 got=65536 st=0x00000000  00 7D 8A F0
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24053760 want=65536 got=65536 st=0x00000000  00 26 00 12
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24051712 want=65536 got=65536 st=0x00000000  3D 2C AF E3
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24133632 want=65536 got=65536 st=0x00000000  37 3E 0A BC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24023040 want=65536 got=65536 st=0x00000000  00 01 00 06
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24020992 want=65536 got=65536 st=0x00000000  3E 28 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24207360 want=65536 got=65536 st=0x00000000  3E B5 B4 34
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24016896 want=65536 got=65536 st=0x00000000  00 B7 C5 98
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23922688 want=65536 got=65536 st=0x00000000  3F 7D 8A F0
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24061952 want=65536 got=65536 st=0x00000000  64 0B 00 6D
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24059904 want=65536 got=65536 st=0x00000000  66 FC BE 27
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24141824 want=65536 got=65536 st=0x00000000  72 65 6C 6F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24139776 want=65536 got=65536 st=0x00000000  65 17 5C BD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24039424 want=65536 got=65536 st=0x00000000  3D CA 54 6F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23785472 want=65536 got=65536 st=0x00000000  2E 2D 6D 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24018944 want=65536 got=65536 st=0x00000000  3E 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23750656 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24225792 want=65536 got=65536 st=0x00000000  00 26 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24012800 want=65536 got=65536 st=0x00000000  3E 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23943168 want=65536 got=65536 st=0x00000000  BD E9 1E A7
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24147968 want=65536 got=65536 st=0x00000000  28 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24145920 want=65536 got=65536 st=0x00000000  6E BB EA D6
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24213504 want=65536 got=65536 st=0x00000000  3E 7D 8A F0
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24020992 want=65536 got=65536 st=0x00000000  3E 28 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24387584 want=65536 got=65536 st=0x00000000  13 87 BE 28
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24453120 want=65536 got=65536 st=0x00000000  F4 05 3F 05
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24432640 want=65536 got=65536 st=0x00000000  55 A5 3E CC
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24383488 want=65536 got=65536 st=0x00000000  FC DD 9D 34
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24236032 want=65536 got=65536 st=0x00000000  E9 1E A7 BA
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24305664 want=65536 got=65536 st=0x00000000  79 D1 DA 3B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24268800 want=65536 got=65536 st=0x00000000  3C 3F 47 04
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23734272 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23842816 want=65536 got=65536 st=0x00000000  00 00 00 1B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23805952 want=65536 got=65536 st=0x00000000  07 3F 1D 69
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23961600 want=65536 got=65536 st=0x00000000  3E 6F B2 36
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24289280 want=65536 got=65536 st=0x00000000  6B 65 66 6C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24287232 want=65536 got=65536 st=0x00000000  A7 BA 41 8C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24199168 want=65536 got=65536 st=0x00000000  00 0A 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23863296 want=65536 got=65536 st=0x00000000  E3 1D BD 83
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24078336 want=65536 got=65536 st=0x00000000  12 00 57 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24076288 want=65536 got=65536 st=0x00000000  3A 8E E3 3E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24219648 want=65536 got=65536 st=0x00000000  3F 51 CC B1
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24068096 want=65536 got=65536 st=0x00000000  29 AF A1 3E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24049664 want=65536 got=65536 st=0x00000000  3D A9 57 6A
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24012800 want=65536 got=65536 st=0x00000000  3E 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24010752 want=65536 got=65536 st=0x00000000  00 20 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24301568 want=65536 got=65536 st=0x00000000  3C 47 57 A3
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24479744 want=65536 got=65536 st=0x00000000  00 00 3F 61
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24461312 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24455168 want=65536 got=65536 st=0x00000000  29 6B 3F B8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23988224 want=65536 got=65536 st=0x00000000  3C 8D B9 81
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24465408 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24463360 want=65536 got=65536 st=0x00000000  00 00 00 2A
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24002560 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23998464 want=65536 got=65536 st=0x00000000  3F 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23996416 want=65536 got=65536 st=0x00000000  3F C1 27 50
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24471552 want=65536 got=65536 st=0x00000000  BB 5E C2 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24459264 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24455168 want=65536 got=65536 st=0x00000000  29 6B 3F B8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23980032 want=65536 got=65536 st=0x00000000  00 25 1F B6
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24465408 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24463360 want=65536 got=65536 st=0x00000000  00 00 00 2A
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24002560 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23998464 want=65536 got=65536 st=0x00000000  3F 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23994368 want=65536 got=65536 st=0x00000000  00 46 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24487936 want=65536 got=65536 st=0x00000000  8A F0 BD E9
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24461312 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24455168 want=65536 got=65536 st=0x00000000  29 6B 3F B8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23990272 want=65536 got=65536 st=0x00000000  3A F0 EE EE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24467456 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24463360 want=65536 got=65536 st=0x00000000  00 00 00 2A
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24004608 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23998464 want=65536 got=65536 st=0x00000000  3F 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23996416 want=65536 got=65536 st=0x00000000  3F C1 27 50
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24506368 want=65536 got=65536 st=0x00000000  8C F2 3A 7A
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24461312 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24455168 want=65536 got=65536 st=0x00000000  29 6B 3F B8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23740416 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24002560 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24467456 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24465408 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24004608 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23998464 want=65536 got=65536 st=0x00000000  3F 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23996416 want=65536 got=65536 st=0x00000000  3F C1 27 50
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24373248 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23836672 want=65536 got=65536 st=0x00000000  1E A7 BA 41
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24322048 want=65536 got=65536 st=0x00000000  5F 52 41 2C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24320000 want=65536 got=65536 st=0x00000000  FC DD 9D 34
+  [GPU] draw #5800
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23840768 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24369152 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24309760 want=65536 got=65536 st=0x00000000  83 75 34 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24375296 want=65536 got=65536 st=0x00000000  9A 4D 9C 28
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24352768 want=65536 got=65536 st=0x00000000  14 DA 4B 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23861248 want=65536 got=65536 st=0x00000000  00 80 3F B2
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23744512 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23857152 want=65536 got=65536 st=0x00000000  8A F0 BD E9
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23744512 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23859200 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23744512 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23742464 want=65536 got=65536 st=0x00000000  F0 EE 6E 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23738368 want=65536 got=65536 st=0x00000000  00 00 80 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23857152 want=65536 got=65536 st=0x00000000  8A F0 BD E9
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24496128 want=65536 got=65536 st=0x00000000  E6 5A 33 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24000512 want=65536 got=65536 st=0x00000000  00 18 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24469504 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24459264 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23992320 want=65536 got=65536 st=0x00000000  3E F0 EE EE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24461312 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24455168 want=65536 got=65536 st=0x00000000  29 6B 3F B8
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24006656 want=65536 got=65536 st=0x00000000  00 23 1A 3C
+  [HEAP] frees=1024 matched=1024 blocks=439 high-water 26086 KB of 115200 KB (live 21690 KB, holes 4370 KB, largest hole 2048 KB)
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24004608 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23998464 want=65536 got=65536 st=0x00000000  3F 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23996416 want=65536 got=65536 st=0x00000000  3F C1 27 50
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24514560 want=65536 got=65536 st=0x00000000  C3 63 3B 9E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24465408 want=65536 got=65536 st=0x00000000  00 80 3F 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24457216 want=65536 got=65536 st=0x00000000  00 00 00 0C
+[VK] last 60 frames: 12.7 ms/frame wall; per frame draw-record 0.05 ms, texture decode 0.01 ms, checksum 0.01 ms (2 binds reused one), submit+wait+writeback 2.88 ms (5838 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.72 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.04 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 5 batches a frame
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @23992320 want=65536 got=65536 st=0x00000000  3E F0 EE EE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24459264 want=65536 got=65536 st=0x00000000  00 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24008704 want=65536 got=65536 st=0x00000000  00 01 FC 73
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24004608 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24002560 want=65536 got=65536 st=0x00000000  00 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24821760 want=122880 got=122880 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24694784 want=65536 got=65536 st=0x00000000  BA 0D 0F 3F
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @24819712 want=65536 got=65536 st=0x00000000  A6 8A F0 BD
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25229312 want=65536 got=65536 st=0x00000000  E9 D0 63 42
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25204736 want=65536 got=65536 st=0x00000000  42 00 00 80
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4569088 want=67584 got=67584 st=0x00000000  24 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4567040 want=65536 got=65536 st=0x00000000  3A BB 5C 60
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @4634624 want=65536 got=65536 st=0x00000000  23 01 37 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @440320 want=65536 got=65536 st=0x00000000  80 BB 0E FF
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @206848 want=65536 got=65536 st=0x00000000  8A 3E 0A D7
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @409600 want=65536 got=65536 st=0x00000000  1C 8E A6 3E
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @47599616 want=100352 got=100352 st=0x00000000  16 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @86607872 want=65536 got=65536 st=0x00000000  72 41 22 20
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @25112576 want=65536 got=65536 st=0x00000000  4F B7 EA BE
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @107608064 want=65536 got=65536 st=0x00000000  AA 00 BB 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109402112 want=65536 got=65536 st=0x00000000  FF FF 94 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109490176 want=65536 got=65536 st=0x00000000  43 11 00 4C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93100032 want=65536 got=65536 st=0x00000000  69 6E 67 20
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @92993536 want=65536 got=65536 st=0x00000000  02 05 14 0C
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93157376 want=65536 got=65536 st=0x00000000  1B 80 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93003776 want=65536 got=65536 st=0x00000000  3A 20 27 72
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93132800 want=65536 got=65536 st=0x00000000  06 18 00 03
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93126656 want=65536 got=65536 st=0x00000000  00 75 6E 70
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17072128 want=65536 got=65536 st=0x00000000  17 00 01 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93016064 want=65536 got=65536 st=0x00000000  00 00 07 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @18069504 want=65536 got=65536 st=0x00000000  00 22 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @92966912 want=65536 got=65536 st=0x00000000  00 41 63 74
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16850944 want=65536 got=65536 st=0x00000000  00 00 04 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93181952 want=65536 got=65536 st=0x00000000  61 72 70 41
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17080320 want=65536 got=65536 st=0x00000000  FF FF 15 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93153280 want=65536 got=65536 st=0x00000000  00 03 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @32096256 want=65536 got=65536 st=0x00000000  28 00 00 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @17074176 want=65536 got=65536 st=0x00000000  67 20 53 63
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93016064 want=65536 got=65536 st=0x00000000  00 00 07 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93155328 want=65536 got=65536 st=0x00000000  69 63 6C 65
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93048832 want=65536 got=65536 st=0x00000000  00 00 06 00
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @93126656 want=65536 got=65536 st=0x00000000  00 75 6E 70
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16900096 want=65536 got=65536 st=0x00000000  01 01 01 01
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @16893952 want=65536 got=65536 st=0x00000000  05 0C 09 26
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @109531136 want=65536 got=65536 st=0x00000000  74 0A 00 53
+  [GPU] draw #6000
+[VK] last 60 frames: 5.4 ms/frame wall; per frame draw-record 0.03 ms, texture decode 0.00 ms, checksum 0.02 ms (2 binds reused one), submit+wait+writeback 2.59 ms (6143 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.44 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.02 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 5 batches a frame
+  [GPU] draw #6200
+  [GPU] draw #6400
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.02 ms, texture decode 0.00 ms, checksum 0.02 ms (1 binds reused one), submit+wait+writeback 2.77 ms (6443 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.62 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.02 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.00; 5 batches a frame
+  [GPU] draw #6600
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.02 ms, texture decode 0.00 ms, checksum 0.02 ms (2 binds reused one), submit+wait+writeback 2.77 ms (6743 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.62 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.02 ms, surface 0.00, vertex copy 0.00, pipeline 0.00, descriptors 0.00, commands 0.01; 5 batches a frame
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @103024640 want=65536 got=65536 st=0x00000000  00 01 00 00
+[GPU] vertex programs on 5 thread(s)
+  [GPU] draw #6800
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105326592 want=36864 got=36864 st=0x00000000  0A 03 00 00
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105363456 want=36864 got=36864 st=0x00000000  B6 08 2D 00
+[GPU] fog on: mode 0x2601, gen 2, params 2.01449 -0.00289855, colour 0x00000000, fixed function, final combiner 130C0300 00001C80
+  [GPU] draw #7000
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1861632 want=65536 got=65536 st=0x00000000  53 44 42 4B
+  [READ] from=0x0015BAF6 ev=00000000 apc=FE0000B8 @1411072 want=450560 got=450560 st=0x00000000  57 42 4E 44
+  [GPU] draw #7200
+  [GPU] draw #7400
+  [GPU] draw #7600
+  [GPU] draw #7800
+  [GPU] draw #8000
+  [GPU] draw #8200
+  [GPU] draw #8400
+  [GPU] draw #8600
+  [GPU] draw #8800
+[VK] last 60 frames: 6.3 ms/frame wall; per frame draw-record 0.83 ms, texture decode 0.04 ms, checksum 0.05 ms (23 binds reused one), submit+wait+writeback 3.22 ms (8888 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.07 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.35 ms, surface 0.00, vertex copy 0.04, pipeline 0.37, descriptors 0.00, commands 0.07; 35 batches a frame
+[VK] frame 900: 8888 draws (773 fogged), 2368751 triangles, 305 texture uploads, 900 submissions so far; 3x surfaces: 898 reloads skipped, 2 done
+  [GPU] draw #9000
+  [GPU] draw #9200
+  [GPU] draw #9400
+  [GPU] draw #9600
+[DW] lagged kick waits: 1024, 2519.9 ms in all (2461 us each)
+  [GPU] draw #9800
+  [GPU] draw #10000
+  [KERNEL] summary: 4689920 total calls, latest ordinal 294 (slot 51) esp=0x00F7D8E0
+  [KERNEL]   ordinal 294 x1645289
+  [KERNEL]   ordinal 277 x1645270
+  [KERNEL]   ordinal 128 x347286
+  [KERNEL]   ordinal 161 x339115
+  [KERNEL]   ordinal 160 x339074
+  [KERNEL]   ordinal  99 x335807
+  [GPU] draw #10200
+  [GPU] draw #10400
+  [GPU] draw #10600
+  [GPU] draw #10800
+  [GPU] draw #11000
+  [GPU] draw #11200
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.19 ms, texture decode 0.02 ms, checksum 0.05 ms (26 binds reused one), submit+wait+writeback 3.42 ms (11217 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.27 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.09 ms, surface 0.00, vertex copy 0.05, pipeline 0.01, descriptors 0.01, commands 0.04; 38 batches a frame
+  [GPU] draw #11400
+  [GPU] draw #11600
+  [GPU] draw #11800
+[VK] interp 10s: 2000 shown (1540 replayed, 1540 of them blended, 460 as drawn); frame interval 5.0 ms; draws paired 10921 (1875 by the camera), moved with the camera 514, of 11693; camera fitted in 111 of 953 frames; 0 cuts; refused 2 pairs and 0 camera moves by their vertices; replay vs drawn 0.000/255 (0 checks); recording 0.06 ms a frame; present call 0.09 ms avg, 0.31 max
+  [GPU] draw #12000
+  [GPU] draw #12200
+  [GPU] draw #12400
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @10113024 want=22528 got=22528 st=0x00000000  00 00 00 00
+  [GPU] draw #12600
+  [GPU] draw #12800
+  [GPU] draw #13000
+  [GPU] draw #13200
+  [GPU] draw #13400
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.19 ms, texture decode 0.02 ms, checksum 0.05 ms (25 binds reused one), submit+wait+writeback 3.37 ms (13497 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.23 ms, copy back to guest memory 0.12 ms
+[VK]   draw-record split per frame: textures 0.09 ms, surface 0.00, vertex copy 0.05, pipeline 0.01, descriptors 0.00, commands 0.04; 38 batches a frame
+  [GPU] draw #13600
+  [GPU] draw #13800
+  [GPU] draw #14000
+  [GPU] draw #14200
+[APU] 10s: 15008 VP frames (1500/s), 31 frames front-end-trapped, 88 traps, ISR delivered 365 (16 on a guest thread) / held off 22 (longest 5), MMIO 30398 reads 164610 writes, underruns 0
+[APU]   voices: 39 on, 0 release, 13 off (method) 15 off (VP); idle-voice signals 88 (88 trapped, 27 waiting behind a trap); per frame 8.4 active, 0.0 idle in the lists; FETFORCE1=00008000 FECTL=00001F0F IEN=000000D9
+[APU]   SECTL writes: 235 with the sequencer off, 235 on (last 0000000F; callers 011A50FC 011A50FC 011A50FC 011A50FC)
+[APU]   sequencer-off gaps waited out instead of rendered: 2 frames
+[APU]   dropouts: 1 silent periods right after sound (0 with <8 VP frames, 1 with a trapped front end, 0 lightweight, 0 with all 8 frames run)
+[APU]   bins (% of energy): 0:39.0 1:57.0 3:0.9 4:1.6 5:1.6; output samples clipped 0
+[APU]   output: limiter engaged 0 times; 0 of 886 sound blocks repeat one played earlier
+[APU]   two audible voices on one buffer in 1876 samples (pairs within 1 ms: 11378, 1-50 ms: 497, further apart: 1301); bins@apart 7F000000+00FF0000@0 7F000000+0000FF00@0 00000003+00000003@1812 00000003+00000003@1792
+[APU]   clicks: output 2 at a VP frame start, 2 elsewhere; voice jumps at frame starts 0 in 118224 voice-frames
+[APU]   streams: v68 fmt 5180E0E6: 3024 frames, 15 short (462 samples missing), 2 segments, SSL switches 2 (stale 0, empty 75), title SSL writes 4, rate 2.000; v91 fmt A981E0E6: 1433 frames, 0 short (0 samples missing), 0 segments, SSL switches 0 (stale 0, empty 0), title SSL writes 2, rate 1.500
+  [GPU] draw #14400
+  [GPU] draw #14600
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105400320 want=36864 got=36864 st=0x00000000  3A EB 37 00
+  [GPU] draw #14800
+  [GPU] draw #15000
+  [GPU] draw #15200
+  [GPU] draw #15400
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.19 ms, texture decode 0.02 ms, checksum 0.05 ms (21 binds reused one), submit+wait+writeback 3.44 ms (15549 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.28 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.09 ms, surface 0.00, vertex copy 0.05, pipeline 0.01, descriptors 0.00, commands 0.04; 34 batches a frame
+  [GPU] draw #15600
+  [GPU] draw #15800
+  [GPU] draw #16000
+  [GPU] draw #16200
+  [GPU] draw #16400
+  [GPU] draw #16600
+  [GPU] draw #16800
+  [GPU] draw #17000
+  [GPU] draw #17200
+  [GPU] draw #17400
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.19 ms, texture decode 0.02 ms, checksum 0.05 ms (18 binds reused one), submit+wait+writeback 3.36 ms (17422 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.20 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.09 ms, surface 0.00, vertex copy 0.05, pipeline 0.01, descriptors 0.00, commands 0.04; 31 batches a frame
+  [GPU] draw #17600
+  [GPU] draw #17800
+  [GPU] draw #18000
+  [GPU] draw #18200
+  [GPU] draw #18400
+  [GPU] draw #18600
+  [GPU] draw #18800
+  [GPU] draw #19000
+  [GPU] draw #19200
+[GPU] executor (600 flips): busy 3.89 ms a frame: triangle setup 0.00 ms, back-end draws 0.19 ms, vertex programs 0.22 ms, flip 3.28 ms, the rest 0.20 ms (25712 indices a frame: 14715 run, 10997 reused, 25136 fixed-function; 8-wide); 5 thread(s)
+[GPU]   vertex batches, ns per index one thread / split, batches each way: 384+: 9.6 / 48.5 ns, 1360 / 47; 768+: 11.9 / 20.7 ns, 1051 / 349; 3072+: 13.1 / 6.3 ns, 48 / 1375
+[GPU]   pushbuffer words a frame: 17287; most: 0:1800 ARRAY_ELEMENT16 12989, 0:1818  238, 0:17FC SET_BEGIN_END 64, 0:0394  60, 0:0398  60, 0:0A20  60
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.14 ms, texture decode 0.00 ms, checksum 0.04 ms (18 binds reused one), submit+wait+writeback 3.57 ms (19230 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.42 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.05 ms, surface 0.00, vertex copy 0.05, pipeline 0.01, descriptors 0.00, commands 0.04; 30 batches a frame
+[VK] frame 1200: 19230 draws (5273 fogged), 15150311 triangles, 557 texture uploads, 1200 submissions so far; 3x surfaces: 1198 reloads skipped, 2 done
+  [GPU] draw #19400
+  [GPU] draw #19600
+  [GPU] draw #19800
+  [GPU] draw #20000
+  [GPU] draw #20200
+  [GPU] draw #20400
+  [GPU] draw #20600
+  [GPU] draw #20800
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105437184 want=36864 got=36864 st=0x00000000  83 F8 2B 00
+[VK] last 60 frames: 5.1 ms/frame wall; per frame draw-record 0.14 ms, texture decode 0.00 ms, checksum 0.04 ms (17 binds reused one), submit+wait+writeback 3.49 ms (20931 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.34 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.04 ms, surface 0.00, vertex copy 0.05, pipeline 0.01, descriptors 0.00, commands 0.04; 28 batches a frame
+  [GPU] draw #21000
+  [GPU] draw #21200
+  [GPU] draw #21400
+  [GPU] draw #21600
+  [GPU] draw #21800
+  [GPU] draw #22000
+  [GPU] draw #22200
+  [GPU] draw #22400
+  [GPU] draw #22600
+  [GPU] draw #22800
+  [GPU] draw #23000
+  [GPU] draw #23200
+  [GPU] draw #23400
+  [GPU] draw #23600
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.31 ms, texture decode 0.02 ms, checksum 0.10 ms (22 binds reused one), submit+wait+writeback 2.88 ms (23563 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.74 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.15 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.07; 43 batches a frame
+  [GPU] draw #23800
+  [GPU] draw #24000
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @158724096 want=36864 got=36864 st=0x00000000  CA 02 00 00
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @158760960 want=36864 got=36864 st=0x00000000  3F 03 39 00
+  [GPU] draw #24200
+  [KERNEL] summary: 5045248 total calls, latest ordinal 277 (slot 52) esp=0x00F7D7D8
+  [KERNEL]   ordinal 294 x1760744
+  [KERNEL]   ordinal 277 x1760728
+  [KERNEL]   ordinal 161 x381771
+  [KERNEL]   ordinal 160 x381730
+  [KERNEL]   ordinal  99 x374316
+  [KERNEL]   ordinal 128 x347301
+  [GPU] draw #24400
+  [GPU] draw #24600
+  [GPU] draw #24800
+  [GPU] draw #25000
+  [GPU] draw #25200
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @94871552 want=20480 got=20480 st=0x00000000  00 00 00 00
+  [GPU] draw #25400
+  [GPU] draw #25600
+  [GPU] draw #25800
+  [GPU] draw #26000
+  [GPU] draw #26200
+  [GPU] draw #26400
+  [GPU] draw #26600
+  [GPU] draw #26800
+  [GPU] draw #27000
+[VK] last 60 frames: 5.1 ms/frame wall; per frame draw-record 0.40 ms, texture decode 0.04 ms, checksum 0.15 ms (28 binds reused one), submit+wait+writeback 2.44 ms (27076 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.29 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.23 ms, surface 0.00, vertex copy 0.08, pipeline 0.01, descriptors 0.01, commands 0.06; 58 batches a frame
+  [GPU] draw #27200
+  [GPU] draw #27400
+  [GPU] draw #27600
+  [GPU] draw #27800
+  [GPU] draw #28000
+  [GPU] draw #28200
+  [GPU] draw #28400
+  [GPU] draw #28600
+  [GPU] draw #28800
+  [GPU] draw #29000
+  [GPU] draw #29200
+  [GPU] draw #29400
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @94892032 want=36864 got=36864 st=0x00000000  00 00 00 00
+  [GPU] draw #29600
+  [GPU] draw #29800
+  [GPU] draw #30000
+  [GPU] draw #30200
+  [GPU] draw #30400
+[VK] last 60 frames: 5.1 ms/frame wall; per frame draw-record 0.38 ms, texture decode 0.04 ms, checksum 0.14 ms (26 binds reused one), submit+wait+writeback 2.50 ms (30359 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.35 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.21 ms, surface 0.00, vertex copy 0.08, pipeline 0.01, descriptors 0.01, commands 0.06; 54 batches a frame
+  [GPU] draw #30600
+  [GPU] draw #30800
+  [GPU] draw #31000
+  [GPU] draw #31200
+  [GPU] draw #31400
+  [GPU] draw #31600
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105474048 want=36864 got=36864 st=0x00000000  AA 02 2D 00
+  [GPU] draw #31800
+  [GPU] draw #32000
+  [GPU] draw #32200
+  [GPU] draw #32400
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @93720576 want=12288 got=12288 st=0x00000000  00 00 00 00
+  [GPU] draw #32600
+  [GPU] draw #32800
+  [GPU] draw #33000
+  [GPU] draw #33200
+  [GPU] draw #33400
+  [GPU] draw #33600
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.36 ms, texture decode 0.04 ms, checksum 0.14 ms (22 binds reused one), submit+wait+writeback 2.54 ms (33399 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.39 ms, copy back to guest memory 0.12 ms
+[VK]   draw-record split per frame: textures 0.21 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 50 batches a frame
+[VK] frame 1500: 33399 draws (12692 fogged), 32670647 triangles, 981 texture uploads, 1500 submissions so far; 3x surfaces: 1498 reloads skipped, 2 done
+  [GPU] draw #33800
+  [GPU] draw #34000
+  [GPU] draw #34200
+[DW] lagged kick waits: 2048, 4606.1 ms in all (2249 us each)
+  [GPU] draw #34400
+  [GPU] draw #34600
+  [GPU] draw #34800
+  [GPU] draw #35000
+  [GPU] draw #35200
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @158797824 want=36864 got=36864 st=0x00000000  8E EB 2D 00
+  [GPU] draw #35400
+  [GPU] draw #35600
+  [GPU] draw #35800
+  [GPU] draw #36000
+  [GPU] draw #36200
+  [GPU] draw #36400
+  [GPU] draw #36600
+  [GPU] draw #36800
+  [GPU] draw #37000
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.37 ms, texture decode 0.04 ms, checksum 0.15 ms (28 binds reused one), submit+wait+writeback 2.44 ms (36915 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.29 ms, copy back to guest memory 0.12 ms
+[VK]   draw-record split per frame: textures 0.22 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 58 batches a frame
+  [GPU] draw #37200
+  [GPU] draw #37400
+  [GPU] draw #37600
+  [GPU] draw #37800
+  [GPU] draw #38000
+  [GPU] draw #38200
+  [GPU] draw #38400
+  [GPU] draw #38600
+  [GPU] draw #38800
+  [GPU] draw #39000
+  [GPU] draw #39200
+  [GPU] draw #39400
+  [GPU] draw #39600
+  [GPU] draw #39800
+  [GPU] draw #40000
+  [GPU] draw #40200
+  [GPU] draw #40400
+  [GPU] draw #40600
+  [GPU] draw #40800
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.37 ms, texture decode 0.04 ms, checksum 0.16 ms (29 binds reused one), submit+wait+writeback 2.43 ms (40594 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.28 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.23 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 61 batches a frame
+  [GPU] draw #41000
+  [GPU] draw #41200
+  [GPU] draw #41400
+  [GPU] draw #41600
+  [GPU] draw #41800
+  [GPU] draw #42000
+  [GPU] draw #42200
+  [GPU] draw #42400
+  [GPU] draw #42600
+  [GPU] draw #42800
+  [GPU] draw #43000
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105510912 want=36864 got=36864 st=0x00000000  44 03 34 00
+  [GPU] draw #43200
+  [GPU] draw #43400
+  [GPU] draw #43600
+  [GPU] draw #43800
+  [GPU] draw #44000
+  [GPU] draw #44200
+  [GPU] draw #44400
+[VK] last 60 frames: 6.9 ms/frame wall; per frame draw-record 0.41 ms, texture decode 0.04 ms, checksum 0.17 ms (28 binds reused one), submit+wait+writeback 3.96 ms (44198 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 3.80 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.24 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.08; 60 batches a frame
+  [GPU] draw #44600
+  [GPU] draw #44800
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @94928896 want=22528 got=22528 st=0x00000000  00 00 00 00
+  [GPU] draw #45000
+  [GPU] draw #45200
+  [GPU] draw #45400
+  [GPU] draw #45600
+  [GPU] draw #45800
+  [GPU] draw #46000
+  [KERNEL] summary: 5405696 total calls, latest ordinal 160 (slot 139) esp=0x00F7D6B0
+  [KERNEL]   ordinal 294 x1880589
+  [KERNEL]   ordinal 277 x1880573
+  [KERNEL]   ordinal 161 x423641
+  [KERNEL]   ordinal 160 x423601
+  [KERNEL]   ordinal  99 x410691
+  [KERNEL]   ordinal 128 x347318
+  [GPU] draw #46200
+  [GPU] draw #46400
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @158834688 want=36864 got=36864 st=0x00000000  FB 0C 34 00
+  [GPU] draw #46600
+  [GPU] draw #46800
+  [GPU] draw #47000
+  [GPU] draw #47200
+  [GPU] draw #47400
+  [GPU] draw #47600
+  [GPU] draw #47800
+  [GPU] draw #48000
+  [GPU] draw #48200
+[VK] last 60 frames: 5.2 ms/frame wall; per frame draw-record 0.39 ms, texture decode 0.03 ms, checksum 0.15 ms (30 binds reused one), submit+wait+writeback 2.61 ms (47883 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.46 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.23 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 61 batches a frame
+  [GPU] draw #48400
+  [GPU] draw #48600
+  [GPU] draw #48800
+  [GPU] draw #49000
+  [GPU] draw #49200
+  [GPU] draw #49400
+  [GPU] draw #49600
+  [GPU] draw #49800
+  [GPU] draw #50000
+  [GPU] draw #50200
+  [GPU] draw #50400
+  [GPU] draw #50600
+  [GPU] draw #50800
+  [GPU] draw #51000
+  [GPU] draw #51200
+  [GPU] draw #51400
+  [GPU] draw #51600
+  [GPU] draw #51800
+  [GPU] draw #52000
+  [GPU] draw #52200
+[GPU] executor (600 flips): busy 4.43 ms a frame: triangle setup 0.01 ms, back-end draws 0.35 ms, vertex programs 0.75 ms, flip 2.97 ms, the rest 0.34 ms (58839 indices a frame: 31575 run, 27264 reused, 41088 fixed-function; 8-wide); 5 thread(s)
+[GPU]   vertex batches, ns per index one thread / split, batches each way: 384+: 21.5 / 52.8 ns, 3768 / 171; 768+: 22.2 / 24.6 ns, 922 / 1622; 1536+: 31.3 / 16.8 ns, 21 / 492; 3072+: 36.5 / 12.0 ns, 144 / 4452
+[GPU]   pushbuffer words a frame: 41744; most: 0:1800 ARRAY_ELEMENT16 29391, 0:1818  329, 0:0B80 SET_TRANSFORM_PROGRAM 250, 0:0B84  250, 0:0B88  250, 0:0B8C  250
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.36 ms, texture decode 0.03 ms, checksum 0.14 ms (32 binds reused one), submit+wait+writeback 2.74 ms (51710 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.59 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.21 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 63 batches a frame
+[VK] frame 1800: 51710 draws (20492 fogged), 49865667 triangles, 1512 texture uploads, 1800 submissions so far; 3x surfaces: 1798 reloads skipped, 2 done
+  [GPU] draw #52400
+  [GPU] draw #52600
+  [GPU] draw #52800
+  [GPU] draw #53000
+  [GPU] draw #53200
+  [GPU] draw #53400
+  [GPU] draw #53600
+  [GPU] draw #53800
+  [GPU] draw #54000
+  [GPU] draw #54200
+  [GPU] draw #54400
+  [GPU] draw #54600
+  [GPU] draw #54800
+  [GPU] draw #55000
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @105547776 want=36864 got=36864 st=0x00000000  96 04 2D 00
+  [GPU] draw #55200
+  [GPU] draw #55400
+  [GPU] draw #55600
+  [GPU] draw #55800
+  [GPU] draw #56000
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.34 ms, texture decode 0.02 ms, checksum 0.14 ms (32 binds reused one), submit+wait+writeback 2.80 ms (55532 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.65 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.19 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 63 batches a frame
+  [GPU] draw #56200
+  [GPU] draw #56400
+  [GPU] draw #56600
+  [GPU] draw #56800
+  [GPU] draw #57000
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @93745152 want=16384 got=16384 st=0x00000000  00 00 00 00
+  [GPU] draw #57200
+  [GPU] draw #57400
+  [GPU] draw #57600
+  [GPU] draw #57800
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @93706240 want=14336 got=14336 st=0x00000000  00 00 00 00
+  [GPU] draw #58000
+  [GPU] draw #58200
+  [GPU] draw #58400
+  [GPU] draw #58600
+  [GPU] draw #58800
+  [GPU] draw #59000
+  [GPU] draw #59200
+  [GPU] draw #59400
+  [GPU] draw #59600
+  [GPU] draw #59800
+  [READ] from=0x0015B6AA ev=00000000 apc=00000000 @158871552 want=36864 got=36864 st=0x00000000  4E 02 31 00
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.34 ms, texture decode 0.02 ms, checksum 0.15 ms (32 binds reused one), submit+wait+writeback 2.73 ms (59360 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.58 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.19 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 63 batches a frame
+  [GPU] draw #60000
+  [GPU] draw #60200
+  [GPU] draw #60400
+  [GPU] draw #60600
+  [GPU] draw #60800
+  [GPU] draw #61000
+  [GPU] draw #61200
+  [GPU] draw #61400
+  [GPU] draw #61600
+  [GPU] draw #61800
+  [GPU] draw #62000
+  [GPU] draw #62200
+  [GPU] draw #62400
+  [GPU] draw #62600
+  [GPU] draw #62800
+  [GPU] draw #63000
+  [GPU] draw #63200
+  [GPU] draw #63400
+  [GPU] draw #63600
+  [GPU] draw #63800
+[VK] last 60 frames: 5.0 ms/frame wall; per frame draw-record 0.33 ms, texture decode 0.02 ms, checksum 0.14 ms (32 binds reused one), submit+wait+writeback 2.74 ms (63163 draws total)
+[VK]   flush split per frame: submit 0.01 ms, GPU wait 2.59 ms, copy back to guest memory 0.13 ms
+[VK]   draw-record split per frame: textures 0.19 ms, surface 0.00, vertex copy 0.07, pipeline 0.01, descriptors 0.01, commands 0.06; 63 batches a frame
+  [GPU] draw #64000
+  [GPU] draw #64200
+  [GPU] draw #64400
+  [GPU] draw #64600
