@@ -29,3 +29,7 @@ Thumbs.db
 
 # Ignore local game files
 /darkwatch_game/game/
+
+# Local save images and game data
+/Darkwatch/saves/
+/darkwatch_game/game/
