@@ -1,0 +1,42 @@
+# Build output
+/build*/
+darkwatch_game/build*/
+*.obj
+*.o
+*.a
+*.exe
+*.map
+*.pdb
+
+# Generated from your copy of the game -- never commit these
+darkwatch_game/src/recomp/gen/
+xboxrecomp/tools/*/output/
+*.xbe
+*.pck
+*.uix
+game/
+darkwatch_game/game/
+
+# A packaged or played copy
+Darkwatch/
+dist/
+darkwatch_game/Darkwatch/
+saves/
+saves-win/
+screenshots/
+assets/launcher_*.png
+darkwatch.ini
+env.txt
+*.log
+darkwatch-log*.txt
+xbox_kernel.log
+logs/
+
+# Python / editors
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+!xboxrecomp/tools/conformance/test.xbe

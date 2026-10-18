@@ -1,0 +1,87 @@
+[
+ {
+  "start": "0x00041FE7",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x000C5504",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x000DEDC1",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x000DFB5E",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x000EF6C1",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001CFE99",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001CFEAA",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001D0B86",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001D0D94",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001D37AC",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001D3B3A",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001F2ACD",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001F2AD9",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x001F2AE5",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x00245481",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x0024CBC8",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ },
+ {
+  "start": "0x00326EC0",
+  "observed": false,
+  "note": "data pointer to code right after a jmp/ret inside a detected function (merged_vtable_scan)"
+ }
+]
